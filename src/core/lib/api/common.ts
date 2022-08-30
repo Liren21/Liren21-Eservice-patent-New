@@ -31,8 +31,8 @@ export const keepalive = (): void => {
 }
 
 export const handlerSuccess = (res: AxiosResponse, handler?: (val: any) => any, isSuccessMessage = true): void => {
-    if (res.data.success) {
-        handler && handler(res.data.data)
+    if (res.data) {
+        handler && handler(res.data)
 
         if (res.config.method !== 'get' && isSuccessMessage) {
             new Toaster({ msg: 'Операция выполнена успешно', type: toast.TYPE.SUCCESS })

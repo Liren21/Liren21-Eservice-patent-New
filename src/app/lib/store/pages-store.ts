@@ -1,6 +1,7 @@
 import {makeAutoObservable} from 'mobx'
-import routes from '../routes'
 import TypesPatent from "../models/typesPatent";
+import services from "../services/services";
+import {handlerError} from "../../../core/lib/api/common";
 
 interface IPagesStore {
     name: string
@@ -38,6 +39,12 @@ class PagesStore implements IPagesStore {
 
     setCreator(val: string) {
         this.creator = val
+    }
+
+    getPatent(name, creationDate, creator, typeFile) {
+        services.getApplication(name, creationDate, creator, typeFile)
+            .then()
+            .catch(handlerError)
     }
 }
 
