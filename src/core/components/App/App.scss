@@ -1,0 +1,40 @@
+
+
+
+.app, .modal {
+  font-size: small;
+
+  .icon-action {
+    font-size: large;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  input, select, button, a.btn {
+    font-size: small;
+  }
+
+  .btn {
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+
+    .dropdown-item {
+      padding: 0;
+
+      a {
+        padding: 5px 50px;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+}

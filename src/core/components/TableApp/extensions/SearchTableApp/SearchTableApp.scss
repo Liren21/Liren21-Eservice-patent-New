@@ -1,0 +1,21 @@
+
+
+.search-table-app {
+  margin: 10px 0 10px 0;
+
+  button {
+    width: 100%;
+  }
+
+  input, button {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-table-app {
+    button > span {
+      display: none;
+    }
+  }
+}

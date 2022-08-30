@@ -1,0 +1,25 @@
+$hBorder: 25px;
+$mBorder: 15px;
+$lBorder: 12px;
+.app {
+  margin: 10rem 0;
+
+  .card {
+    border-radius: $hBorder;
+  }
+
+  .form-control, .css-yk16xz-control,.css-2b097c-container:hover, .css-1pahdxg-control:hover, .css-2b097c-container, .css-yk16xz-control:hover, .css-1laaa021-allyText:hover {
+    height: 2.3rem;
+    border-radius: $lBorder !important;
+  }
+
+  .btn {
+    height: 2.3rem;
+    border-radius: $lBorder;
+  }
+
+  code {
+    font-size: small;
+    font-family: monospace;
+  }
+}

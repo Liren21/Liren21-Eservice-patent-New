@@ -1,0 +1,122 @@
+Arguments: 
+  /home/mrsky1001/.nvm/versions/node/v14.16.1/bin/node /home/mrsky1001/.nvm/versions/node/v14.16.1/bin/yarn add @types/react-bootstrap-table2-editor
+
+PATH: 
+  /home/mrsky1001/.nvm/versions/node/v14.16.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2freact-bootstrap-table2-editor: Not found
+      at Request.params.callback [as _callback] (/home/mrsky1001/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:66992:18)
+      at Request.self.callback (/home/mrsky1001/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:140763:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/home/mrsky1001/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:141735:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/home/mrsky1001/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:141657:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "gia-protocols",
+    "version": "1.0.0",
+    "description": "New version on ReactJs",
+    "scripts": {
+      "dev": "npm run kill-front;  node src/core/proxy.js",
+      "dev2": "node src/core/proxy_devel2.js",
+      "dev-fix": "npm run valid; npm run fix; node src/core/proxy.js",
+      "dev2-fix": "npm run valid; npm run fix; node src/core/proxy_devel2.js",
+      "build": "parcel build src/app/index.html --public-url ./ --no-cache",
+      "valid": " yaspeller .",
+      "fix": "eslint src --fix",
+      "kill-back": "kill -9 `lsof -t -i tcp:4567`",
+      "kill-front": "kill -9 `lsof -t -i tcp:1234`"
+    },
+    "author": "Mr.Sky1001",
+    "license": "ISC",
+    "lint-staged": {
+      "*.{js,jsx}": [
+        "prettier",
+        "eslint",
+        "git add"
+      ],
+      "*.scss": [
+        "stylelint",
+        "git add"
+      ]
+    },
+    "dependencies": {
+      "@popperjs/core": "^2.9.2",
+      "animate.css": "^4.1.1",
+      "axios": "^0.21.1",
+      "bootstrap": "^5.0.2",
+      "font-awesome": "^4.7.0",
+      "history": "^5.0.0",
+      "mobx": "^6.3.2",
+      "mobx-react-lite": "^3.2.0",
+      "moment": "^2.29.1",
+      "nanoid": "^3.1.23",
+      "react-bootstrap": "^1.4.0",
+      "react-bootstrap-table": "^4.3.1",
+      "react-bootstrap-table-next": "^3.3.5",
+      "react-bootstrap-table2-editor": "^1.3.2",
+      "react-bootstrap-table2-filter": "^1.1.11",
+      "react-bootstrap-table2-overlay": "^2.0.0",
+      "react-bootstrap-table2-paginator": "^2.1.2",
+      "react-bootstrap-table2-toolkit": "^2.1.3",
+      "react-datepicker": "^3.3.0",
+      "react-dom": "^16.14.0",
+      "react-overlay-loader": "0.0.3",
+      "react-router-dom": "^5.2.0",
+      "react-select": "^3.0.4",
+      "react-toastify": "^5.5.0",
+      "toasted-notes": "^3.2.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.14.6",
+      "@babel/plugin-proposal-decorators": "^7.14.5",
+      "@babel/plugin-transform-runtime": "^7.14.5",
+      "@babel/preset-react": "^7.14.5",
+      "@types/react": "^17.0.14",
+      "@types/react-bootstrap-table": "^4.3.9",
+      "@types/react-bootstrap-table-next": "^4.0.15",
+      "@types/react-bootstrap-table2-paginator": "^2.1.2",
+      "@types/react-bootstrap-table2-toolkit": "^2.1.5",
+      "@types/react-bootstrap-table2-editor": "^2.1.5",
+      "@types/react-dom": "^17.0.9",
+      "@types/react-router-dom": "^5.1.8",
+      "@typescript-eslint/eslint-plugin": "^4.28.4",
+      "@typescript-eslint/parser": "^4.28.4",
+      "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+      "eslint": "^7.31.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-config-react": "^1.1.7",
+      "eslint-plugin-prettier": "^3.4.0",
+      "eslint-plugin-react": "^7.24.0",
+      "parcel-bundler": "^1.12.5",
+      "parcel-proxy-server": "^1.1.0",
+      "prettier": "^2.3.2",
+      "react": "^16.14.0",
+      "react-dom": "^16.14.0",
+      "sass": "^1.36.0",
+      "typescript": "^4.3.5",
+      "yandex-speller": "^4.0.0",
+      "yaspeller": "^7.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

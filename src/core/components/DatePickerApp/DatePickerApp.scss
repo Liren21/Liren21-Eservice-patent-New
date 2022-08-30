@@ -1,0 +1,23 @@
+
+
+.datepicker-app {
+  .datepicker-label {
+    &.left-label {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+
+  .react-datepicker-wrapper {
+    display: block !important;
+
+    > * {
+      min-height: 38px;
+
+      input {
+        min-height: 38px;
+      }
+    }
+  }
+}
+

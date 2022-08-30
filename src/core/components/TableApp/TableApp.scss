@@ -1,0 +1,326 @@
+
+
+tbody {
+  border-top: 1px solid #e3e3e3 !important;
+}
+
+@mixin app-container {
+  .app > .container {
+    max-width: 100%;
+  }
+}
+
+@mixin table-flex {
+  tr:nth-child(2n) {
+    background-color: #00b5ff14;
+  }
+
+  tr {
+    th {
+      width: 1%
+    }
+
+    display: block;
+
+    .expand-cell > div > i, .selection-cell > div > i {
+      //font-size: x-large;
+      margin: 10px;
+      //padding-left: 50%;
+    }
+
+
+    td {
+      min-height: 40px;
+      text-align: left !important;
+      border-color: transparent !important;
+      display: block;
+
+
+      > div {
+        text-align: right;
+
+        .date-formatter.datepicker-custom {
+          width: 50%;
+          float: right;
+        }
+
+        > * {
+          text-align: left;
+        }
+
+        button {
+          width: 50%;
+        }
+      }
+
+      button {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@mixin first-row {
+  .first-bold {
+    > :first-child {
+      text-align: center !important;
+
+      font-weight: bold;
+    }
+  }
+}
+
+@mixin columns-header {
+  thead {
+    display: none;
+  }
+
+
+  td:before {
+    padding-left: 5px;
+    width: 50%;
+    content: attr(data-label);
+    float: left !important;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+@mixin overflow-hidden {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+@mixin th-overflow {
+  th {
+    @include overflow-hidden
+  }
+}
+
+@mixin search-table {
+  .search-table-template {
+    button {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+//
+//.react-bootstrap-table th .order > .dropup > .caret {
+//  margin: 10px 0;
+//  color: #cccccc;
+//}
+//
+//.react-bootstrap-table th .order > .dropdown > .caret {
+//  margin: 10px 0 10px 5px;
+//  color: #cccccc;
+//}
+
+.table-app {
+  .react-bs-table-no-data {
+    text-align: center;
+  }
+
+  //
+  //.dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+  //  content: "";
+  //  border-top: 0;
+  //  border-bottom: 4px dashed;
+  //  border-bottom: 4px solid\9;
+  //}
+
+  span.order {
+    display: none;
+  }
+
+  th .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9
+  ;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+
+  .expand-cell {
+    min-width: 15px !important;
+  }
+
+  th.expand-cell-header {
+    > .fa.fa-bars {
+      display: none;
+    }
+  }
+
+  td {
+    .errors-absolute {
+      .form-errors {
+        position: absolute;
+        margin-left: -40px;
+        text-align: justify;
+      }
+    }
+
+    &.expand-cell {
+      padding: 0;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  td {
+    .select-custom {
+      .form-group {
+        margin: 0;
+      }
+    }
+  }
+
+  .pagination-block {
+    width: 100%;
+    display: inline-block;
+
+    .sizer-page, .page-navigation {
+      display: inline-block;
+      width: auto;
+    }
+
+    .sizer-page {
+      float: right;
+    }
+  }
+
+  .sizer-page {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    p {
+      margin-right: 0.5rem;
+      display: inline-block;
+    }
+
+    button {
+      display: inline-block;
+    }
+  }
+
+  .fa-bars, .fa-chevron-up {
+    color: #4995b3;
+  }
+
+  .fa-bars:hover, .fa-chevron-up:hover {
+    cursor: pointer;
+  }
+
+}
+
+@media only screen and (max-width: 530px) {
+  @include first-row;
+  @include app-container;
+  @include th-overflow;
+  @include search-table;
+
+  .columns-header-iphone {
+    @include columns-header;
+  }
+
+  .table-flex-iphone {
+    @include table-flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .table-app {
+    td {
+      .errors-absolute {
+        .form-errors {
+          position: relative;
+          margin-left: auto;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 530px) and (max-width: 768px) {
+  @include first-row;
+  @include app-container;
+  @include th-overflow;
+
+  .columns-header-ipad {
+    @include columns-header;
+  }
+
+  .table-flex-ipad {
+    @include table-flex;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  @include app-container;
+  @include th-overflow;
+}
+
+
+%table-app-columns {
+  text-align: center;
+  vertical-align: middle !important;
+  //padding: 10px !important;
+  border: 0 !important;
+  border-bottom: 1px solid #dee2e6 !important;
+
+  .nav-links-button {
+    margin: 0 0 0 15px !important;
+  }
+
+  a {
+    font-size: large;
+  }
+
+  a + a {
+    margin: 0 0 0 15px !important;
+  }
+
+
+}
+
+.table-app-columns-header {
+  @extend %table-app-columns;
+  cursor: pointer !important;
+
+
+  &:hover {
+    background-color: #d9f1ff;
+  }
+
+  &.columns-expander-header {
+    width: 30px !important;
+    //position: absolute;
+    div {
+      //margin-left: -70px;
+    }
+
+  }
+}
+
+.table-app-columns-content {
+  @extend %table-app-columns;
+
+
+}
+
+.pagination.react-bootstrap-table-page-btns-ul {
+  float: right;
+}
+
+
+
+

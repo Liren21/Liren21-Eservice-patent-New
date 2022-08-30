@@ -1,0 +1,26 @@
+.home-card {
+  .react-datepicker {
+    border-radius: 25px;
+
+    .react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+      border-top-right-radius: 25px !important;
+      border-top-left-radius: 25px !important;
+    }
+  }
+
+  .home-card-body {
+    padding: 2rem !important;
+
+    .home-from-control {
+      margin: 0 0 1.5rem 0;
+    }
+
+    .home-search-btn {
+      float: right;
+    }
+  }
+
+  .mb-3 {
+    width: 100%;
+  }
+}
