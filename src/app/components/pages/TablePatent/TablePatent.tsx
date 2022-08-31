@@ -17,7 +17,7 @@ export default observer(() => {
                 data={pagesStore.demand}
                 columns={columns()}
                 hasPagination={false}
-
+                hasColumnsExpander={true}
             />
         </>
     )

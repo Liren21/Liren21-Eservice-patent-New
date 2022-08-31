@@ -1,6 +1,6 @@
 import './Home.scss'
 
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Button, Card, Form, Row} from 'react-bootstrap'
 import {observer} from 'mobx-react-lite'
 import pagesStore from "../../lib/store/pages-store";
@@ -14,6 +14,9 @@ export default observer(() => {
         pagesStore.getPatent()
         console.log(pagesStore.demand)
     }
+    useEffect(()=>{
+        kok()
+    },[])
     return (
         <Card className={'home-card'}>
             <Card.Body className={'home-card-body'}>
