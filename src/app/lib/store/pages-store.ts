@@ -44,9 +44,13 @@ class PagesStore implements IPagesStore {
         this.creator = val
     }
 
+    setDemand(val:Demand[]) {
+        this.demand = val
+    }
+
     getPatent() {
         services.getApplication()
-            .then()
+            .then((d)=> this.setDemand(d))
             .catch(handlerError)
     }
 }

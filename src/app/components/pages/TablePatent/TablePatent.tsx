@@ -16,7 +16,6 @@ export default observer(() => {
                 id={'patentOutputTable'}
                 data={pagesStore.demand}
                 columns={columns()}
-                hasColumnsExpander={true}
                 hasPagination={false}
 
             />

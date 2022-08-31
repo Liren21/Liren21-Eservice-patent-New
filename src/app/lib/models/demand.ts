@@ -45,7 +45,7 @@ export default class Demand extends Global<IDemand, Demand> implements IDemand {
     //people_date: string
     constructor(obj: IDemand) {
         super(obj)
-        console.log(this.authors)
+
 
         this.authors = obj.authors.map((e) => new Authors(e))
         // this.existAuths = obj.existAuths.map((e) => new DemandAuthor(e))

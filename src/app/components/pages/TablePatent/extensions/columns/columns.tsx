@@ -20,7 +20,7 @@ export default (): any => {
             // formatExtraData: modifiedCounter,
         },
         {
-            dataField: 'assignment.discipline',
+            dataField: 'objType',
             text: 'Тип заявки',
 
             align: 'center',
@@ -31,7 +31,7 @@ export default (): any => {
             editable: false,
         },
         {
-            dataField: 'assignment.faculty',
+            dataField: 'createDate',
             text: 'Дата создания РИД',
 
             align: 'center',
@@ -42,7 +42,7 @@ export default (): any => {
             editable: false,
         },
         {
-            dataField: 'assignment.studyForm',
+            dataField: 'authors.surname',
             text: 'Создатель',
 
             align: 'center',
@@ -53,7 +53,7 @@ export default (): any => {
             editable: false,
         },
         {
-            dataField: 'assignment.studyLevel',
+            dataField: 'status',
             text: 'Статус',
 
             align: 'center',

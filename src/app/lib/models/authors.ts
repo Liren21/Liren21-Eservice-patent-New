@@ -49,7 +49,7 @@ export default class Authors extends Global<IAuthor, Authors> implements IAuthor
 
     constructor(obj: IAuthor) {
         super(obj)
-        console.log(this.address)
+
     }
 
 
