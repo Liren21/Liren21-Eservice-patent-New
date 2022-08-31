@@ -3,7 +3,7 @@
 import coreUrls from '../../core/lib/core-urls'
 
 export default {
-    GET_APPLICATION: coreUrls.BACKEND + 'get_application',
+    GET_APPLICATION: coreUrls.BACKEND + 'getApplication',
     REPORT: coreUrls.BACKEND + 'report',
     DOCUMENTS: coreUrls.BACKEND + 'documents',
     DOCUMENT_TYPES: coreUrls.BACKEND + 'documentTypes',

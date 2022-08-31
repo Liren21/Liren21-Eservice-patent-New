@@ -1,5 +1,3 @@
-
-
 /* eslint-disable */
 const settingsService = require('../app/settings-service')
 const ParcelProxyServer = require('parcel-proxy-server')

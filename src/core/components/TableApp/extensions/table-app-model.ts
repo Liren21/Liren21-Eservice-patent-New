@@ -1,19 +1,17 @@
-
-
 import BootstrapTable, {
     ColumnDescription,
     ExpandRowProps,
     SelectRowProps,
     SortOrder,
 } from 'react-bootstrap-table-next'
-import React, { Dispatch } from 'react'
-import { checkAndInsert, listToOptions } from '../../../lib/common'
-import filterFactory, { FilterFactoryProps } from 'react-bootstrap-table2-filter'
+import React, {Dispatch} from 'react'
+import {checkAndInsert, listToOptions} from '../../../lib/common'
+import filterFactory, {FilterFactoryProps} from 'react-bootstrap-table2-filter'
 import PaginationProps from '../../../lib/models/pagination-props'
-import { columnsExpander } from './columns-expander'
-import { nanoid } from 'nanoid'
-import { getProp, setProp } from '../../../lib/local-storage/service-storage'
-import { OptionSelect } from '../../../lib/models/option-select'
+import {columnsExpander} from './columns-expander'
+import {nanoid} from 'nanoid'
+import {getProp, setProp} from '../../../lib/local-storage/service-storage'
+import {OptionSelect} from '../../../lib/models/option-select'
 
 interface IAttrs {
     'data-label'?: string
@@ -90,7 +88,8 @@ class TableAppModel implements ITableApp {
     options?: OptionSelect[]
     setSelectedColumns?: Dispatch<any>
 
-    constructor() {}
+    constructor() {
+    }
 
     init(
         props: ITableAppProps,
@@ -117,7 +116,7 @@ class TableAppModel implements ITableApp {
             column.headerTitle = true
             column.classes = addCssClasses(String(column.classes), 'table-app-columns-content')
             column.headerClasses = addCssClasses(String(column.headerClasses), 'table-app-columns-header')
-            column.attrs = { 'data-label': column.text }
+            column.attrs = {'data-label': column.text}
             column.sort = true
             // column.filter = textFilter()
         })
@@ -262,7 +261,7 @@ class TableAppModel implements ITableApp {
                         text: '50',
                         value: 50,
                     },
-                    { text: 'Все', value: this.props.data.length },
+                    {text: 'Все', value: this.props.data.length},
                 ],
             }),
             noDataIndication: 'Нет данных',

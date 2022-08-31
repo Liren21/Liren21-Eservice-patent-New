@@ -1,10 +1,10 @@
 
 
 module.exports = {
-    title: 'Демо V2',
-    host: 'eservice.omsu.ru',
-    test: 'eservice.app1.univer',
-    domainUrl: '/eservice-demo-mobx',
-    backendPort: '4567',
-    frontendPort: '1234',
+    title: "Регистрация РИД", // Change this param for your project.
+    host: "eservice.omsu.ru", // Change this param for your project (iias or eservice).
+    test: "eservice.app1.univer", // Change this param for your project (iias or eservice).
+    domainUrl: "/patent", // Change this param for your project.
+    backendPort: "4567",
+    frontendPort: "1234",
 }

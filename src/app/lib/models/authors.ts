@@ -25,7 +25,7 @@ export interface IAuthor extends IGlobal {
     isLeader: number
 }
 
-export default class Author extends Global<IAuthor, Author> implements IAuthor {
+export default class Authors extends Global<IAuthor, Authors> implements IAuthor {
     peopleId: number | string
     peopleDate: string
     surname: string
@@ -49,7 +49,7 @@ export default class Author extends Global<IAuthor, Author> implements IAuthor {
 
     constructor(obj: IAuthor) {
         super(obj)
-
+        console.log(this.address)
     }
 
 

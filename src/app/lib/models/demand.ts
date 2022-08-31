@@ -1,5 +1,5 @@
 import { Global, IGlobal } from '../../../core/lib/models/global'
-import Author from "./author";
+import Authors from "./authors";
 import DemandAuthor from "./demandAuthor";
 
 
@@ -16,7 +16,7 @@ export interface IDemand extends IGlobal {
     size: number
     addressDemand: string
     status: number
-    authors: Author[]
+    authors: Authors[]
     existAuths: DemandAuthor[]
     createAppDate: string
     comment: string
@@ -37,7 +37,7 @@ export default class Demand extends Global<IDemand, Demand> implements IDemand {
     size: number
     addressDemand: string
     status: number
-    authors: Author[]
+    authors: Authors[]
     existAuths: DemandAuthor[]
     createAppDate: string
     comment: string
@@ -45,9 +45,11 @@ export default class Demand extends Global<IDemand, Demand> implements IDemand {
     //people_date: string
     constructor(obj: IDemand) {
         super(obj)
+        console.log(this.authors)
 
-        this.authors = obj.authors.map((e) => new Author(e))
-        this.existAuths = obj.existAuths.map((e) => new DemandAuthor(e))
+        this.authors = obj.authors.map((e) => new Authors(e))
+        // this.existAuths = obj.existAuths.map((e) => new DemandAuthor(e))
+
 
     }
 

@@ -1,5 +1,3 @@
-
-
 import axios, { AxiosError, AxiosResponse } from 'axios'
 import coreUrls from '../core-urls'
 import history from '../history/create-browser-history'

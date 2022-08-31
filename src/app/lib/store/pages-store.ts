@@ -2,6 +2,7 @@ import {makeAutoObservable} from 'mobx'
 import TypesPatent from "../models/typesPatent";
 import services from "../services/services";
 import {handlerError} from "../../../core/lib/api/common";
+import Demand from "../models/demand";
 
 interface IPagesStore {
     name: string
@@ -9,9 +10,11 @@ interface IPagesStore {
     typeFile: string
     creator: string
     typesFile: TypesPatent[]
+    demand: Demand[]
 }
 
 class PagesStore implements IPagesStore {
+    demand: Demand[] = []
     name = ''
     creationDate = ''
     creator = ''
@@ -41,8 +44,8 @@ class PagesStore implements IPagesStore {
         this.creator = val
     }
 
-    getPatent(name, creationDate, creator, typeFile) {
-        services.getApplication(name, creationDate, creator, typeFile)
+    getPatent() {
+        services.getApplication()
             .then()
             .catch(handlerError)
     }
