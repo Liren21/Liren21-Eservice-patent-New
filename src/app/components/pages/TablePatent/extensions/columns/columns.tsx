@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 import routes from "../../../../../lib/routes";
+import pagesStore from "../../../../../lib/store/pages-store";
+
 
 
 export default (): any => {
@@ -40,7 +42,7 @@ export default (): any => {
     }
 
     const insideLink = (cell, row) => {
-        return <Link to={routes.PATENTCONTENT +'#'+ row.id}>{cell}</Link>
+        return <Link to={routes.PATENTCONTENT +"="+ row.id } onClick={()=>pagesStore.getPatentContent(row)}>{cell}</Link>
     }
     return [
         {
@@ -53,7 +55,7 @@ export default (): any => {
             headerAlign: 'center',
             headerStyle: {width: '150px', verticalAlign: 'middle'},
             isLocked: true,
-            formatter:insideLink
+            formatter: insideLink
             // formatExtraData: modifiedCounter,
         },
         {

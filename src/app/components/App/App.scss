@@ -8,9 +8,20 @@ $lBorder: 12px;
     border-radius: $hBorder;
   }
 
-  .form-control, .css-yk16xz-control,.css-2b097c-container:hover, .css-1pahdxg-control:hover, .css-2b097c-container, .css-yk16xz-control:hover, .css-1laaa021-allyText:hover {
+  .card-body {
+    padding: 2rem !important;
+  }
+
+  .form-control, .css-yk16xz-control, .css-2b097c-container:hover,
+  .css-1pahdxg-control:hover, .css-2b097c-container,
+  .css-yk16xz-control:hover, .css-1laaa021-allyText:hover, .nav-pills .nav-link.active, .nav-pills .show > .nav-link,
+  .nav-link:hover, .nav-pills .nav-link {
     height: 2.3rem;
     border-radius: $lBorder !important;
+  }
+
+  .nav-link {
+    transition: none !important;
   }
 
   .btn {
@@ -22,4 +33,7 @@ $lBorder: 12px;
     font-size: small;
     font-family: monospace;
   }
+}
+textarea{
+  min-height:60px !important;
 }

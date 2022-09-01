@@ -8,7 +8,7 @@ import columns from "./extensions/columns/columns";
 
 
 export default observer(() => {
-    console.log(pagesStore.demand)
+
 
     return (
         <>

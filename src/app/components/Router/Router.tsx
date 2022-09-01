@@ -13,7 +13,7 @@ const Router = observer(() => {
         <HashRouter basename={routes.HOME}>
             <Switch>
                 <Route exact path={routes.HOME} component={Home} />
-                <Route exact path={routes.PATENTCONTENT} component={PatentContent} />
+                <Route exact path={`${routes.PATENTCONTENT}`} component={PatentContent} />
                 <Redirect from="*" to={routes.HOME} />
             </Switch>
         </HashRouter>

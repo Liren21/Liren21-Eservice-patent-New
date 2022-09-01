@@ -11,14 +11,17 @@ interface IPagesStore {
     creator: string
     typesFile: TypesPatent[]
     demand: Demand[]
+    idPatent: number
 }
 
 class PagesStore implements IPagesStore {
     demand: Demand[] = []
+    patentContent: Demand[] = []
     name = ''
     creationDate = ''
     creator = ''
     typeFile = null
+    idPatent = null
     typesFile = [
         new TypesPatent({value: 0, description: 'Программа для ЭВМ'}),
         new TypesPatent({value: 1, description: 'База данных'})
@@ -43,14 +46,26 @@ class PagesStore implements IPagesStore {
     setCreator(val: string) {
         this.creator = val
     }
+    setIdPatent(val: number) {
+        this.idPatent = val
+    }
 
-    setDemand(val:Demand[]) {
+    setDemand(val: Demand[]) {
         this.demand = val
+    }
+    setPatentContent(val: Demand[]) {
+        this.patentContent = val
     }
 
     getPatent() {
         services.getApplication()
-            .then((d)=> this.setDemand(d))
+            .then((d) => this.setDemand(d))
+            .catch(handlerError)
+    }
+
+    getPatentContent(row) {
+        services.getApplicationById(row.id)
+            .then((d) => {console.log(d)})
             .catch(handlerError)
     }
 }

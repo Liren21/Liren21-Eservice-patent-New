@@ -7,7 +7,7 @@ export default {
     REPORT: coreUrls.BACKEND + 'report',
     DOCUMENTS: coreUrls.BACKEND + 'documents',
     DOCUMENT_TYPES: coreUrls.BACKEND + 'documentTypes',
-    EMPLOYMENTS: coreUrls.BACKEND + 'employments',
+    GET_APPLICATION_BY_ID: coreUrls.BACKEND + 'getApplicationById',
 }
 // CREATE_DOCUMENT: new Address("create", exceptions.ERROR_GET(), exceptions.ERROR_GET()),
 //     //new

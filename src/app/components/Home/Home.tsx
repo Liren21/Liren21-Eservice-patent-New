@@ -12,11 +12,11 @@ import TablePatent from "../pages/TablePatent/TablePatent";
 export default observer(() => {
     const kok = () => {
         pagesStore.getPatent()
-        console.log(pagesStore.demand)
     }
-    useEffect(()=>{
+    console.log(pagesStore.patentContent)
+    useEffect(() => {
         kok()
-    },[])
+    }, [])
     return (
         <Card className={'home-card'}>
             <Card.Body className={'home-card-body'}>
