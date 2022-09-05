@@ -4,43 +4,43 @@ import DemandAuthor from "./demandAuthor";
 
 
 export interface IDemand extends IGlobal {
-    id: string
-    objType: string
-    name: string
-    owner: string
-    createDate: string
-    pcType: string
-    language: string
-    annotation: string
-    OS: string
-    size: number
-    addressDemand: string
-    status: number
-    authors: Authors[]
-    existAuths: DemandAuthor[]
-    createAppDate: string
-    comment: string
+    id?: string
+    objType?: string
+    name?: string
+    owner?: string
+    createDate?: string
+    pcType?: string
+    language?: string
+    annotation?: string
+    OS?: string
+    size?: number
+    addressDemand?: string
+    status?: number
+    authors?: Authors[]
+    existAuths?: DemandAuthor[]
+    createAppDate?: string
+    comment?: string
     // people_id: number,
     //people_date: string
 }
 
 export default class Demand extends Global<IDemand, Demand> implements IDemand {
-    id: string
-    objType: string
-    name: string
-    owner: string
-    createDate: string
-    pcType: string
-    language: string
-    annotation: string
-    OS: string
-    size: number
-    addressDemand: string
-    status: number
-    authors: Authors[]
-    existAuths: DemandAuthor[]
-    createAppDate: string
-    comment: string
+    id?: string
+    objType?: string
+    name?: string
+    owner?: string
+    createDate?: string
+    pcType?: string
+    language?: string
+    annotation?: string
+    OS?: string
+    size?: number
+    addressDemand?: string
+    status?: number
+    authors?: Authors[]
+    existAuths?: DemandAuthor[]
+    createAppDate?: string
+    comment?: string
     // people_id: number,
     //people_date: string
     constructor(obj: IDemand) {

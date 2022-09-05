@@ -19,6 +19,7 @@ export interface IFormControlAppProps {
     classesLabel?: string
     emptyMessage?: string
     classesInput?: string
+    placeholderText?: string
     dateFormat?: string
     useWeekdaysShort?: boolean
     validErrors?: string[]

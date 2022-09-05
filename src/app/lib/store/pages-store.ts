@@ -4,6 +4,7 @@ import services from "../services/services";
 import {handlerError} from "../../../core/lib/api/common";
 import Demand from "../models/demand";
 
+
 interface IPagesStore {
     name: string
     creationDate: string
@@ -12,6 +13,7 @@ interface IPagesStore {
     typesFile: TypesPatent[]
     demand: Demand[]
     idPatent: number
+
 }
 
 class PagesStore implements IPagesStore {

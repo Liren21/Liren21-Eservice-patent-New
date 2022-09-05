@@ -36,11 +36,50 @@ export default {
             .then((res) =>
                 handlerSuccess(res, (data) => {
                     pagesStore.setPatentContent(data)
+                    console.log(data)
                 }),
             )
             .catch(handlerError)
             .then(() => appStore.setLoading(false))
 
         return result
-    }
+    },
+    async UpdInfoRid(name, addressDemand, objType, owner, createDate): Promise<Demand> {
+        appStore.setLoading(true)
+        let result: Demand
+
+
+        const data = {
+            id: pagesStore.patentContent['id'],
+            objType: objType,
+            name: name,
+            addressDemand: addressDemand,
+            owner: owner,
+            createDate: createDate,
+            pcType: "",
+            language: "",
+            annotation: "",
+            OS: "",
+            size: 0,
+            status: pagesStore.patentContent['status'],
+            authors: null,
+            existAuths: null,
+            createAppDate: "",
+            comment: "",
+
+        }
+
+        await axios
+            .post(urls.UPDATE_INFO, JSON.stringify(data))
+            .then((res) =>
+                handlerSuccess(res, (data) => {
+                   console.log(data)
+                }),
+            )
+            .catch(handlerError)
+            .then(() => appStore.setLoading(false))
+
+        return result
+    },
+
 }

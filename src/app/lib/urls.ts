@@ -8,6 +8,7 @@ export default {
     DOCUMENTS: coreUrls.BACKEND + 'documents',
     DOCUMENT_TYPES: coreUrls.BACKEND + 'documentTypes',
     GET_APPLICATION_BY_ID: coreUrls.BACKEND + 'getApplicationById',
+    UPDATE_INFO: coreUrls.BACKEND + 'updateInfo',
 }
 // CREATE_DOCUMENT: new Address("create", exceptions.ERROR_GET(), exceptions.ERROR_GET()),
 //     //new

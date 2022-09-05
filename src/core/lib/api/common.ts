@@ -36,7 +36,7 @@ export const handlerSuccess = (res: AxiosResponse, handler?: (val: any) => any, 
             new Toaster({ msg: 'Операция выполнена успешно', type: toast.TYPE.SUCCESS })
         }
     } else {
-        throw new Error(res.data.message)
+        throw new Error(res.data)
     }
 }
 

@@ -1,5 +1,4 @@
-import { Global, IGlobal } from '../../../core/lib/models/global'
-
+import {Global, IGlobal} from '../../../core/lib/models/global'
 
 
 export interface IDemandAuthor extends IGlobal {
