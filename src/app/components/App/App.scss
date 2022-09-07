@@ -34,6 +34,20 @@ $lBorder: 12px;
     font-family: monospace;
   }
 }
-textarea{
-  min-height:60px !important;
+
+textarea {
+  min-height: 60px !important;
+}
+
+.react-datepicker {
+  border-radius: 25px;
+}
+
+.react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before, .react-datepicker__month-read-view--down-arrow::before, .react-datepicker__month-year-read-view--down-arrow::before{
+  margin-right: 15px;
 }

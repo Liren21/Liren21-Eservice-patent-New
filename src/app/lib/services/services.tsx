@@ -36,7 +36,8 @@ export default {
             .then((res) =>
                 handlerSuccess(res, (data) => {
                     pagesStore.setPatentContent(data)
-                    console.log(data)
+                    pagesStore.setAuthors(data.authors)
+                    console.log(data.authors)
                 }),
             )
             .catch(handlerError)
@@ -51,29 +52,29 @@ export default {
 
         const data = {
             id: pagesStore.patentContent['id'],
-            objType: objType,
-            name: name,
-            addressDemand: addressDemand,
-            owner: owner,
-            createDate: createDate,
-            pcType: "",
-            language: "",
-            annotation: "",
-            OS: "",
+            objType: objType == '' ? pagesStore.patentContent['objType'] : objType,
+            name: name == '' ? pagesStore.patentContent['name'] : name,
+            addressDemand: addressDemand == '' ? pagesStore.patentContent['addressDemand'] : addressDemand,
+            owner: owner == '' ? pagesStore.patentContent['owner'] : owner,
+            createDate: createDate == '' ? pagesStore.patentContent['createDate'] : createDate,
+            pcType: '',
+            language: '',
+            annotation: '',
+            OS: '',
             size: 0,
             status: pagesStore.patentContent['status'],
             authors: null,
             existAuths: null,
-            createAppDate: "",
-            comment: "",
+            createAppDate: '',
+            comment: '',
 
         }
-
+        console.log(data.status)
         await axios
-            .post(urls.UPDATE_INFO, JSON.stringify(data))
+            .post(urls.UPDATE_INFO, data)
             .then((res) =>
                 handlerSuccess(res, (data) => {
-                   console.log(data)
+                    console.log(data)
                 }),
             )
             .catch(handlerError)

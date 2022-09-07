@@ -3,6 +3,7 @@ import services from "../services/services";
 import {handlerError} from "../../../core/lib/api/common";
 
 
+
 interface IRidStore {
     name: string
     objType: string
@@ -42,13 +43,13 @@ class RidStore implements IRidStore {
 
     setAddressDemand(val: string): void {
         this.addressDemand = val
-        console.log(val)
     }
 
-    PostUpdInfoRid(name, addressDemand, objType, owner, createDate) {
-        services.UpdInfoRid(name, addressDemand, objType, owner, createDate)
-            .then((res) => console.log(res))
+    PostUpdInfoRid() {
+        services.UpdInfoRid(this.name, this.addressDemand, this.objType, this.owner, this.createDate)
+            .then((res) => res)
             .catch(handlerError)
+
     }
 
 }
