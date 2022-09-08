@@ -2,13 +2,12 @@ import React from 'react'
 
 import {observer} from 'mobx-react-lite'
 import './PatentСontent.scss'
-import { Col, Nav, Row, Tab} from "react-bootstrap";
+import {Col, Nav, Row, Tab} from "react-bootstrap";
 import InfoRID from "./InfoRID/InfoRID";
 import InfoAuthors from "./InfoAuthors/InfoAuthors";
 
 
 export default observer(() => {
-
 
     return (
         <>

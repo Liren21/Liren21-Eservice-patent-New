@@ -42,7 +42,8 @@ export default (): any => {
     }
 
     const insideLink = (cell, row) => {
-        return <Link to={routes.PATENTCONTENT +"="+ row.id } onClick={()=>pagesStore.getPatentContent(row)}>{cell}</Link>
+        pagesStore.setIdPatent(row)
+        return <Link to={routes.PATENTCONTENT +"="+ row.id } onClick={()=>pagesStore.getPatentContent(row.id)}>{cell}</Link>
     }
     return [
         {

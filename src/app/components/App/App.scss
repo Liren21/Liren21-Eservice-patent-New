@@ -4,8 +4,8 @@ $lBorder: 12px;
 .app {
   margin: 10rem 0;
 
-  .card {
-    border-radius: $hBorder;
+  .card, {
+    border-radius: $hBorder!important;
   }
 
   .card-body {
@@ -39,8 +39,8 @@ textarea {
   min-height: 60px !important;
 }
 
-.react-datepicker {
-  border-radius: 25px;
+.react-datepicker,.modal-content {
+  border-radius: $hBorder;
 }
 
 .react-datepicker__header:not(.react-datepicker__header--has-time-select) {

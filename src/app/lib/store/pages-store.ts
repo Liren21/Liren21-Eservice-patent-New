@@ -72,7 +72,7 @@ class PagesStore implements IPagesStore {
     }
 
     getPatentContent(row) {
-        services.getApplicationById(row.id)
+        services.getApplicationById(row)
             .then(() => {})
             .catch(handlerError)
     }

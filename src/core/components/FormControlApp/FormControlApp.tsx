@@ -51,7 +51,7 @@ const FormControlApp = (props: IFormControlAppProps): JSX.Element => {
             ) : null}
             {initState.type === 'date' ? (
                 <DatePickerApp
-                    placeholderText={ initState.placeholder}
+                    placeholderText={ initState.label}
                     id={initState.id}
                     type={initState.type}
                     style={initState.style}
@@ -98,7 +98,7 @@ const FormControlApp = (props: IFormControlAppProps): JSX.Element => {
                     style={initState.style}
                     rows={initState.rows}
                     required={initState.required}
-                    placeholder={initState.placeholder}
+                    placeholder={initState.label}
                     onChange={onChange}
                     onBlur={onChange}
                     min={initState.minValue}

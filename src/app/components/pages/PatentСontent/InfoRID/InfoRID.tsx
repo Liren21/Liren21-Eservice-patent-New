@@ -18,7 +18,7 @@ export default observer(() => {
                         onClick={() => ridStore.PostUpdInfoRid()}
                         variant={'outline-primary'}
                         style={{float: "right"}}><i
-                        className="fa fa-save" aria-hidden="true"/>Сохранить</Button></Card.Title>
+                        className="fa fa-pencil" aria-hidden="true"/>Редактировать</Button></Card.Title>
                     <br/><br/>
                     <Card.Text>
                         <Form>
