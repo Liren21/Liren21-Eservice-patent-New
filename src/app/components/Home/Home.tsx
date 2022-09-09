@@ -64,7 +64,7 @@ export default observer(() => {
                                     classes={'home-from-control'}
                                     id={'creationDate'}
                                     type={'date'}
-                                    label={'Дата создания'}
+                                    label={'Дата создания '}
                                     value={pagesStore.creationDate}
                                     onChange={(val) => pagesStore.setCreationDate(val)}
                                 />

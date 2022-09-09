@@ -43,7 +43,9 @@ class AddUser implements IAddUser {
     }
 
     setNewBirthday(val: string) {
-        this.newBirthday = val
+        this.newBirthday =  val
+        console.log(this.newBirthday)
+
     }
     setExistingName(val: string) {
         this.existingName = val
@@ -60,8 +62,13 @@ class AddUser implements IAddUser {
     setExistingBirthday(val: string) {
         this.existingBirthday = val
     }
-    getAddExisting() {
-        services.addExistingUser(this.newName, this.newSurname,this.newLastname,this.newBirthday)
+    postAddExisting() {
+        services.addExistingUser(this.existingName, this.existingSurname,this.existingLastname,this.existingBirthday)
+            .then(() => {})
+            .catch(handlerError)
+    }
+    postAddNew() {
+        services.addNewUser(this.newName, this.newSurname,this.newLastname)
             .then(() => {})
             .catch(handlerError)
     }

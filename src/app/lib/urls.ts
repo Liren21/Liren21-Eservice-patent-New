@@ -10,6 +10,7 @@ export default {
     GET_APPLICATION_BY_ID: coreUrls.BACKEND + 'getApplicationById',
     UPDATE_INFO: coreUrls.BACKEND + 'updateInfo',
     INSERT_AUTHOR: coreUrls.BACKEND + 'insertAuthor',
+    SEARCH_AUTHOR: coreUrls.BACKEND + 'searchAuthor',
 }
 // CREATE_DOCUMENT: new Address("create", exceptions.ERROR_GET(), exceptions.ERROR_GET()),
 //     //new

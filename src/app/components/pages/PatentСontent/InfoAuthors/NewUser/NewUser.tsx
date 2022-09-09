@@ -46,7 +46,7 @@ export default observer(() => {
 
                         />
                         <br/>
-                        <Button onClick={()=>addUser.getAddExisting()} style={{float: 'right'}} variant={'outline-primary'}>Найти</Button>
+                        <Button onClick={()=>addUser.postAddNew()} style={{float: 'right'}} variant={'outline-primary'}>Найти</Button>
                     </Col>
                 </Row>
             </Form>
