@@ -13,7 +13,7 @@ export default observer(() => {
     const kok = () => {
         pagesStore.getPatent()
     }
-    console.log(pagesStore.patentContent)
+
     useEffect(() => {
         kok()
     }, [])

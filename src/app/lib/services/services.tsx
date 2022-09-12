@@ -7,6 +7,8 @@ import {handlerError, handlerSuccess} from '../../../core/lib/api/common'
 import Demand from "../models/demand";
 import appStore from "../../../core/lib/store/app";
 import pagesStore from "../store/pages-store";
+import Authors from "../models/authors";
+import addUser from "../store/AddUser";
 
 
 export default {
@@ -19,6 +21,7 @@ export default {
             .then((res) =>
                 handlerSuccess(res, (data) => {
                     result = data ? data.map((d) => new Demand(d)) : []
+
                 }),
             )
             .catch(handlerError)
@@ -37,7 +40,6 @@ export default {
                 handlerSuccess(res, (data) => {
                     pagesStore.setPatentContent(data)
                     pagesStore.setAuthors(data.authors)
-                    console.log(data.authors)
                 }),
             )
             .catch(handlerError)
@@ -82,13 +84,12 @@ export default {
 
         return result
     },
-
-    async addExistingUser(newName, newSurname, newLastname, newBirthday) {
+    async searchUser(newName, newSurname, newLastname, newBirthday) {
         appStore.setLoading(true)
         const data = {
             id: 0,
             peopleId: '0',
-            peopleDate: pagesStore.authors['peopleId'],
+            peopleDate: pagesStore.patentContent['id'],
             surname: `${newSurname}`,
             name: `${newName}`,
             lastname: `${newLastname}`,
@@ -109,11 +110,12 @@ export default {
             isLeader: 0
 
         }
+
         await axios
             .post(urls.SEARCH_AUTHOR, data)
             .then((res) =>
-                handlerSuccess(res, () => {
-                    console.log(1)
+                handlerSuccess(res, (data) => {
+                    addUser.setFoundAuthor(data)
                 }),
             )
             .catch(handlerError)
@@ -121,15 +123,14 @@ export default {
 
 
     },
-    async addNewUser(newName, newSurname, newLastname, ) {
+    async addNewUser(newName, newSurname, newLastname,): Promise<Authors> {
         appStore.setLoading(true)
-        let result: Demand
-
+        let result: Authors
 
         const data = {
             id: 0,
             peopleId: '0',
-            peopleDate: pagesStore.authors['peopleId'],
+            peopleDate: pagesStore.patentContent['id'],
             surname: newSurname,
             name: newName,
             lastname: newLastname,
@@ -148,19 +149,42 @@ export default {
             contribution: '',
             isCreator: 0,
             isLeader: 0
-
         }
+
         await axios
             .post(urls.INSERT_AUTHOR, data)
             .then((res) =>
-                handlerSuccess(res, (data) => {
-                    console.log(data)
+                handlerSuccess(res, () => {
+
                 }),
             )
             .catch(handlerError)
             .then(() => appStore.setLoading(false))
 
         return result
+    },
+    async AddExAuthor(authId, id, peopleId) {
+        appStore.setLoading(true)
+
+
+        const data = {
+            authId: id,
+            demandId: pagesStore.patentContent['id'],
+            peopleId: peopleId
+        }
+
+
+        await axios
+            .post(urls.ADD_EX_AUTHOR, data)
+            .then((res) =>
+                handlerSuccess(res, (data) => {
+                    data
+                }),
+            )
+            .catch(handlerError)
+            .then(() => appStore.setLoading(false))
+
+
     },
 
 }

@@ -12,6 +12,7 @@ interface IAddUser {
     existingSurname: string
     existingLastname: string
     existingBirthday: string
+    foundAuthor: []
 
 }
 
@@ -24,6 +25,7 @@ class AddUser implements IAddUser {
     existingSurname = ''
     existingLastname = ''
     existingBirthday = ''
+    foundAuthor: [] = []
 
 
     constructor() {
@@ -43,10 +45,9 @@ class AddUser implements IAddUser {
     }
 
     setNewBirthday(val: string) {
-        this.newBirthday =  val
-        console.log(this.newBirthday)
-
+        this.newBirthday = val
     }
+
     setExistingName(val: string) {
         this.existingName = val
     }
@@ -62,14 +63,30 @@ class AddUser implements IAddUser {
     setExistingBirthday(val: string) {
         this.existingBirthday = val
     }
+
+    setFoundAuthor(val: []) {
+        this.foundAuthor = val
+    }
+
+
     postAddExisting() {
-        services.addExistingUser(this.existingName, this.existingSurname,this.existingLastname,this.existingBirthday)
-            .then(() => {})
+        services.searchUser(this.existingName, this.existingSurname, this.existingLastname, this.existingBirthday)
+            .then(() => {
+            })
             .catch(handlerError)
     }
+
     postAddNew() {
-        services.addNewUser(this.newName, this.newSurname,this.newLastname)
-            .then(() => {})
+        services.addNewUser(this.newName, this.newSurname, this.newLastname)
+            .then(() => {
+            })
+            .catch(handlerError)
+    }
+
+    postAddEx(authId, id, peopleId) {
+        services.AddExAuthor(authId, id, peopleId)
+            .then(() => {
+            })
             .catch(handlerError)
     }
 }

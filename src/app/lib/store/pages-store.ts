@@ -5,7 +5,6 @@ import {handlerError} from "../../../core/lib/api/common";
 import Demand from "../models/demand";
 
 
-
 interface IPagesStore {
     name: string
     creationDate: string
@@ -51,9 +50,11 @@ class PagesStore implements IPagesStore {
     setCreator(val: string) {
         this.creator = val
     }
+
     setAuthors(val: Demand[]) {
         this.authors = val
     }
+
     setIdPatent(val: number) {
         this.idPatent = val
     }
@@ -61,6 +62,7 @@ class PagesStore implements IPagesStore {
     setDemand(val: Demand[]) {
         this.demand = val
     }
+
     setPatentContent(val: Demand[]) {
         this.patentContent = val
     }
@@ -73,7 +75,8 @@ class PagesStore implements IPagesStore {
 
     getPatentContent(row) {
         services.getApplicationById(row)
-            .then(() => {})
+            .then(() => {
+            })
             .catch(handlerError)
     }
 }

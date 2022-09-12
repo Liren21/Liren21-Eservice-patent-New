@@ -3,7 +3,6 @@ import services from "../services/services";
 import {handlerError} from "../../../core/lib/api/common";
 
 
-
 interface IRidStore {
     name: string
     objType: string
@@ -25,7 +24,6 @@ class RidStore implements IRidStore {
 
     setName(val: string): void {
         this.name = val
-        console.log(val)
     }
 
     setObjType(val: string): void {
@@ -38,7 +36,6 @@ class RidStore implements IRidStore {
 
     setOwner(val: string): void {
         this.owner = val
-        console.log(val)
     }
 
     setAddressDemand(val: string): void {

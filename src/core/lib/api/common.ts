@@ -29,7 +29,7 @@ export const keepalive = (): void => {
 }
 
 export const handlerSuccess = (res: AxiosResponse, handler?: (val: any) => any, isSuccessMessage = true): void => {
-    if (res.data) {
+    if (res.statusText === 'OK') {
         handler && handler(res.data)
 
         if (res.config.method !== 'get' && isSuccessMessage) {

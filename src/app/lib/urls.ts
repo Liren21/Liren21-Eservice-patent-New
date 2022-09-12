@@ -11,6 +11,7 @@ export default {
     UPDATE_INFO: coreUrls.BACKEND + 'updateInfo',
     INSERT_AUTHOR: coreUrls.BACKEND + 'insertAuthor',
     SEARCH_AUTHOR: coreUrls.BACKEND + 'searchAuthor',
+    ADD_EX_AUTHOR: coreUrls.BACKEND + 'addExAuthor',
 }
 // CREATE_DOCUMENT: new Address("create", exceptions.ERROR_GET(), exceptions.ERROR_GET()),
 //     //new

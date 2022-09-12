@@ -4,13 +4,7 @@ $lBorder: 12px;
 .app {
   margin: 10rem 0;
 
-  .card, {
-    border-radius: $hBorder!important;
-  }
 
-  .card-body {
-    padding: 2rem !important;
-  }
 
   .form-control, .css-yk16xz-control, .css-2b097c-container:hover,
   .css-1pahdxg-control:hover, .css-2b097c-container,
@@ -50,4 +44,11 @@ textarea {
 
 .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before, .react-datepicker__month-read-view--down-arrow::before, .react-datepicker__month-year-read-view--down-arrow::before{
   margin-right: 15px;
+}
+.card {
+  border-radius: $hBorder!important;
+}
+
+.card-body {
+  padding: 2rem !important;
 }
