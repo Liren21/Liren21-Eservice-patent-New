@@ -4,7 +4,7 @@ import {observer} from 'mobx-react-lite'
 import { Card} from "react-bootstrap";
 import pagesStore from "../../../../lib/store/pages-store";
 import {TableApp} from "../../../../../core/components/TableApp/TableApp";
-import columns from "../InfoRID/columns/columns";
+import columns from "./columns/columns";
 import CustomModal from "../../../general/CustomModal/CustomModal";
 
 
@@ -14,7 +14,7 @@ export default observer(() => {
         <>
             <Card>
                 <Card.Body>
-                    <Card.Title><strong>Сведения об авторах</strong> <CustomModal/></Card.Title>
+                    <Card.Title><strong><i className="fa fa-users" aria-hidden="true"/> Сведения об авторах</strong> <CustomModal/></Card.Title>
                     <br/><br/>
                     <Card.Text>
                         <TableApp

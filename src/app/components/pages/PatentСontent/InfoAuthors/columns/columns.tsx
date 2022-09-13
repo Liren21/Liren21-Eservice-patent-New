@@ -1,8 +1,10 @@
 import React from 'react'
+import DataUser from "../DataUser/DataUser";
 
 
 
 export default (): any => {
+
     const formatterIcons = (cell) => {
         let icon = 'fa fa-pencil'
         let title = 'Статус "Черновик"'
@@ -28,6 +30,11 @@ export default (): any => {
 
         return <i className={icon} title={title}/>
     }
+    const contentUser = (cell,row) => {
+
+
+      return <DataUser row={row} cell={cell}/>
+    }
 
 
     return [
@@ -41,6 +48,8 @@ export default (): any => {
             headerAlign: 'center',
             headerStyle: {width: '150px', verticalAlign: 'middle'},
             isLocked: true,
+
+            formatter: contentUser
 
         },
         {

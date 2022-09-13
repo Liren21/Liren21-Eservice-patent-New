@@ -2,7 +2,7 @@ import React from 'react'
 
 import {observer} from 'mobx-react-lite'
 import './PatentСontent.scss'
-import {Col, Nav, Row, Tab} from "react-bootstrap";
+import {Button, Col, Nav, Row, Tab} from "react-bootstrap";
 import InfoRID from "./InfoRID/InfoRID";
 import InfoAuthors from "./InfoAuthors/InfoAuthors";
 
@@ -16,16 +16,12 @@ export default observer(() => {
                     <Col sm={2}>
                         <Nav variant="pills" className="flex-column">
                             <Nav.Item>
-                                <Nav.Link href="/"> <i className="fa fa-arrow-left" aria-hidden="true"/> Вернуться к
-                                    списку </Nav.Link>
-                            </Nav.Item>
-                            <br/>
-                            <br/>
-                            <Nav.Item>
-                                <Nav.Link eventKey="1"> Информация о РИД</Nav.Link>
+                                <Nav.Link eventKey="1"><i className="fa fa-info-circle" aria-hidden="true"/> Информация
+                                    о РИД
+                                </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="2"> Сведения об авторах</Nav.Link>
+                                <Nav.Link eventKey="2"><i className="fa fa-users" aria-hidden="true"/> Сведения об авторах</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="3"> Сведения для реферата</Nav.Link>
@@ -36,6 +32,9 @@ export default observer(() => {
                             <Nav.Item>
                                 <Nav.Link eventKey="5"> Статусы </Nav.Link>
                             </Nav.Item>
+                            <br/>
+                            <br/>
+                            <Button style={{borderColor:'#fff',textAlign:"left"}} variant={"outline-danger"}  href="/"><i style={{transform:'rotate(180deg)',fontSize:'1rem',}} className="fa fa-sign-out" aria-hidden="true"/> Выход</Button>
                         </Nav>
                     </Col>
                     <Col sm={10}>

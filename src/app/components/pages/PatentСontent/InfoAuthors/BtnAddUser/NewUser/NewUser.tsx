@@ -3,8 +3,8 @@ import React from 'react'
 import {observer} from 'mobx-react-lite'
 import './NewUser.scss'
 import {Button, Col, Form, Row} from "react-bootstrap";
-import FormControlApp from "../../../../../../core/components/FormControlApp/FormControlApp";
-import addUser from "../../../../../lib/store/AddUser";
+import FormControlApp from "../../../../../../../core/components/FormControlApp/FormControlApp";
+import addUser from "../../../../../../lib/store/AddUser";
 
 
 

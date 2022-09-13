@@ -14,7 +14,7 @@ export default observer(() => {
         <>
             <Card>
                 <Card.Body>
-                    <Card.Title><strong>Информация о РИД</strong> <Button
+                    <Card.Title><strong> <i className="fa fa-info-circle" aria-hidden="true"/> Информация о РИД</strong> <Button
                         onClick={() => ridStore.PostUpdInfoRid()}
                         variant={'outline-primary'}
                         style={{float: "right"}}><i

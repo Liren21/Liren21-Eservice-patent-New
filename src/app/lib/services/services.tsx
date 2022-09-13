@@ -163,19 +163,21 @@ export default {
 
         return result
     },
-    async AddExAuthor(authId, id, peopleId) {
+    async AddExAuthor( id, peopleId) {
         appStore.setLoading(true)
 
 
         const data = {
             authId: id,
             demandId: pagesStore.patentContent['id'],
-            peopleId: peopleId
+            peopId: peopleId,
         }
-
+        console.log(data.authId)
+        console.log(data.demandId)
+        // console.log(data.peopId)
 
         await axios
-            .post(urls.ADD_EX_AUTHOR, data)
+            .post(urls.ADD_EX_AUTHOR, {authId: id, demandId: pagesStore.patentContent['id'], peopId: peopleId},)
             .then((res) =>
                 handlerSuccess(res, (data) => {
                     data

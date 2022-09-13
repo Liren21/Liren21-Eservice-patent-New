@@ -83,9 +83,11 @@ class AddUser implements IAddUser {
             .catch(handlerError)
     }
 
-    postAddEx(authId, id, peopleId) {
-        services.AddExAuthor(authId, id, peopleId)
+    postAddEx() {
+        // @ts-ignore
+        services.AddExAuthor( this.foundAuthor[0]['id'],this.foundAuthor[0]['peopleId'])
             .then(() => {
+
             })
             .catch(handlerError)
     }
