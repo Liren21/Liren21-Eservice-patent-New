@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 
 import {observer} from 'mobx-react-lite'
-import './DataUser.scss'
-import {Button,  Modal,  Tabs, Tab} from "react-bootstrap";
+import './WithinAuthor .scss'
+import {Button, Modal, Tabs, Tab} from "react-bootstrap";
+import PersonalInf from "./PersonalInf/PersonalInf";
 
 interface IDataUser {
     row: any
@@ -16,17 +17,18 @@ export default observer(({row, cell}: IDataUser) => {
     const handleShow = () => setShow(true)
     console.log(row)
     return (
-        <>
+        <div style={{textAlign:'center'}}>
             <Button variant="outline-primary" onClick={handleShow}>
                 {cell}
             </Button>
 
-            <Modal show={show} onHide={handleClose}>
+            <Modal size={"lg"} show={show} onHide={handleClose}>
                 <Modal.Body>
                     <Tabs defaultActiveKey="PersonalInformation" id="uncontrolled-tab-example" className="mb-3">
                         <Tab eventKey="PersonalInformation" title="Личная Информация ">
-
+                            <PersonalInf/>
                         </Tab>
+
                         <Tab eventKey="PassportData" title="Паспортные данные">
 
                         </Tab>
@@ -36,6 +38,6 @@ export default observer(({row, cell}: IDataUser) => {
                     </Tabs>
                 </Modal.Body>
             </Modal>
-        </>
+        </div>
     )
 })

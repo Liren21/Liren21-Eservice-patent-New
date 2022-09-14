@@ -48,7 +48,7 @@ export default observer(() => {
                         <br/>
 
 
-                        {addUser.foundAuthor.length !== 0?
+                        {addUser.foundAuthor.length !== 0 ?
                             <Card>
                                 <Card.Body>
                                     {

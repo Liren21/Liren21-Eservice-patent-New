@@ -4,7 +4,6 @@ import routes from "../../../../../lib/routes";
 import pagesStore from "../../../../../lib/store/pages-store";
 
 
-
 export default (): any => {
 
     const formatterAuthors = (cell) => {
@@ -17,33 +16,29 @@ export default (): any => {
 
     const iconRoutine = (cell) => {
         let icon = 'fa fa-pencil'
-        let title = 'Статус "Черновик"'
 
         switch (cell) {
             case 0:
                 icon = 'fa fa-pencil-square-o'
-                title = 'На редактировании'
                 break
             case 1:
                 icon = 'fa fa-check'
-                title = 'Ожидает проверки'
                 break
             case 2:
                 icon = 'fa fa-pencil-square-o'
-                title = 'На редактировании'
                 break
             case 3:
                 icon = 'fa fa-lock'
-                title = 'Утверждено'
                 break
         }
 
-        return <i className={icon} title={title}/>
+        return <i className={icon}/>
     }
 
     const insideLink = (cell, row) => {
         pagesStore.setIdPatent(row)
-        return <Link to={routes.PATENTCONTENT +"="+ row.id } onClick={()=>pagesStore.getPatentContent(row.id)}>{cell}</Link>
+        return <Link to={routes.PATENTCONTENT + "=" + row.id}
+                     onClick={() => pagesStore.getPatentContent(row.id)}>{cell}</Link>
     }
     return [
         {

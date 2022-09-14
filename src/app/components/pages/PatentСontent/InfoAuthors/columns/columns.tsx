@@ -1,5 +1,5 @@
 import React from 'react'
-import DataUser from "../DataUser/DataUser";
+import DataUser from "../WithinAuthor/WithinAuthor ";
 
 
 
