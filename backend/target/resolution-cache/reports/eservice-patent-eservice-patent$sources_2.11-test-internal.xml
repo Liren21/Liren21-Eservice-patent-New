@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="eservice-patent"
+		module="eservice-patent$sources_2.11"
+		revision="1.0"
+		conf="test-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20220919163413"/>
+	<dependencies>
+		<module organisation="com.zaxxer" name="HikariCP">
+			<revision name="2.4.6" status="release" pubdate="20160427203849" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="57">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6749" time="0" location="/home/devel21/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.4.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.4.6/HikariCP-2.4.6.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.4.6" rev-constraint-default="2.4.6" rev-constraint-dynamic="2.4.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="HikariCP" type="jar" ext="jar" status="successful" details="" size="132803" time="303" location="/home/devel21/.ivy2/cache/com.zaxxer/HikariCP/jars/HikariCP-2.4.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.4.6/HikariCP-2.4.6.jar"/>
+					</artifact>
+					<artifact name="HikariCP" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="66911" time="456" location="/home/devel21/.ivy2/cache/com.zaxxer/HikariCP/srcs/HikariCP-2.4.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.4.6/HikariCP-2.4.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatest" name="scalatest_2.11">
+			<revision name="2.2.4" status="release" pubdate="20150129131600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="56">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4971" time="0" location="/home/devel21/.ivy2/cache/org.scalatest/scalatest_2.11/ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalatest_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1438876" time="1941" location="/home/devel21/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-2.2.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4-sources.jar"/>
+					</artifact>
+					<artifact name="scalatest_2.11" type="jar" ext="jar" status="successful" details="" size="7185789" time="4970" location="/home/devel21/.ivy2/cache/org.scalatest/scalatest_2.11/jars/scalatest_2.11-2.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.poi" name="poi-ooxml">
+			<revision name="3.17" status="release" pubdate="20170909032503" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://poi.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="49">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2990" time="0" location="/home/devel21/.ivy2/cache/org.apache.poi/poi-ooxml/ivy-3.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.17" rev-constraint-default="3.17" rev-constraint-dynamic="3.17" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="poi-ooxml" type="jar" ext="jar" status="no" details="" size="1479023" time="0" location="/home/devel21/.ivy2/cache/org.apache.poi/poi-ooxml/jars/poi-ooxml-3.17.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar"/>
+					</artifact>
+					<artifact name="poi-ooxml" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1047127" time="2162" location="/home/devel21/.ivy2/cache/org.apache.poi/poi-ooxml/srcs/poi-ooxml-3.17-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.virtuald" name="curvesapi">
+			<revision name="1.04" status="release" pubdate="20160526102706" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/virtuald/curvesapi" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="55">
+				<license name="BSD License" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2940" time="0" location="/home/devel21/.ivy2/cache/com.github.virtuald/curvesapi/ivy-1.04.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.04" rev-constraint-default="1.04" rev-constraint-dynamic="1.04" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="curvesapi" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="201324" time="653" location="/home/devel21/.ivy2/cache/com.github.virtuald/curvesapi/srcs/curvesapi-1.04-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04-sources.jar"/>
+					</artifact>
+					<artifact name="curvesapi" type="jar" ext="jar" status="no" details="" size="98365" time="0" location="/home/devel21/.ivy2/cache/com.github.virtuald/curvesapi/jars/curvesapi-1.04.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.poi" name="poi-ooxml-schemas">
+			<revision name="3.17" status="release" pubdate="20170909032528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://poi.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="52">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2722" time="0" location="/home/devel21/.ivy2/cache/org.apache.poi/poi-ooxml-schemas/ivy-3.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.17" rev-constraint-default="3.17" rev-constraint-dynamic="3.17" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="poi-ooxml-schemas" type="jar" ext="jar" status="no" details="" size="5924600" time="0" location="/home/devel21/.ivy2/cache/org.apache.poi/poi-ooxml-schemas/jars/poi-ooxml-schemas-3.17.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.jar"/>
+					</artifact>
+					<artifact name="poi-ooxml-schemas" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.xmlbeans" name="xmlbeans">
+			<revision name="2.6.0" status="release" pubdate="20130606004946" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xmlbeans.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="53">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2662" time="0" location="/home/devel21/.ivy2/cache/org.apache.xmlbeans/xmlbeans/ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="xmlbeans" type="jar" ext="jar" status="no" details="" size="2730866" time="0" location="/home/devel21/.ivy2/cache/org.apache.xmlbeans/xmlbeans/jars/xmlbeans-2.6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar"/>
+					</artifact>
+					<artifact name="xmlbeans" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="stax" name="stax-api">
+			<revision name="1.0.1" status="release" pubdate="20060901003914" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://stax.codehaus.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="54">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2532" time="0" location="/home/devel21/.ivy2/cache/stax/stax-api/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="stax-api" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
+					<artifact name="stax-api" type="jar" ext="jar" status="no" details="" size="26514" time="0" location="/home/devel21/.ivy2/cache/stax/stax-api/jars/stax-api-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.poi" name="poi">
+			<revision name="3.17" status="release" pubdate="20170909032359" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://poi.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="50">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3334" time="0" location="/home/devel21/.ivy2/cache/org.apache.poi/poi/ivy-3.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/poi/poi/3.17/poi-3.17.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.17" rev-constraint-default="3.17" rev-constraint-dynamic="3.17" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="poi" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2374854" time="3909" location="/home/devel21/.ivy2/cache/org.apache.poi/poi/srcs/poi-3.17-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/poi/poi/3.17/poi-3.17-sources.jar"/>
+					</artifact>
+					<artifact name="poi" type="jar" ext="jar" status="no" details="" size="2701171" time="0" location="/home/devel21/.ivy2/cache/org.apache.poi/poi/jars/poi-3.17.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/poi/poi/3.17/poi-3.17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-collections4">
+			<revision name="4.1" status="release" pubdate="20151126035515" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-collections/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="51">
+				<metadata-artifact status="no" details="" size="11379" time="0" location="/home/devel21/.ivy2/cache/org.apache.commons/commons-collections4/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="commons-collections4" type="jar" ext="jar" status="no" details="" size="751238" time="0" location="/home/devel21/.ivy2/cache/org.apache.commons/commons-collections4/jars/commons-collections4-4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar"/>
+					</artifact>
+					<artifact name="commons-collections4" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="701388" time="1291" location="/home/devel21/.ivy2/cache/org.apache.commons/commons-collections4/srcs/commons-collections4-4.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.ning" name="async-http-client">
+			<revision name="1.9.40" status="release" pubdate="20161013155800" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/AsyncHttpClient/async-http-client" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="47">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="6961" time="0" location="/home/devel21/.ivy2/cache/com.ning/async-http-client/ivy-1.9.40.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/ning/async-http-client/1.9.40/async-http-client-1.9.40.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.9.40" rev-constraint-default="1.9.40" rev-constraint-dynamic="1.9.40" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="async-http-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="465410" time="0" location="/home/devel21/.ivy2/cache/com.ning/async-http-client/srcs/async-http-client-1.9.40-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/ning/async-http-client/1.9.40/async-http-client-1.9.40-sources.jar"/>
+					</artifact>
+					<artifact name="async-http-client" type="jar" ext="jar" status="no" details="" size="745264" time="0" location="/home/devel21/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.40.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/ning/async-http-client/1.9.40/async-http-client-1.9.40.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.10.6.Final" status="release" pubdate="20160629184528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="48">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="7197" time="0" location="/home/devel21/.ivy2/cache/io.netty/netty/ivy-3.10.6.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.10.6.Final" rev-constraint-default="3.10.6.Final" rev-constraint-dynamic="3.10.6.Final" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="netty" type="jar" ext="jar" status="no" details="" size="1292696" time="0" location="/home/devel21/.ivy2/cache/io.netty/netty/jars/netty-3.10.6.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar"/>
+					</artifact>
+					<artifact name="netty" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1132389" time="0" location="/home/devel21/.ivy2/cache/io.netty/netty/srcs/netty-3.10.6.Final-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty/3.10.6.Final/netty-3.10.6.Final-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.pac4j" name="pac4j-oauth">
+			<revision name="1.9.1" status="release" pubdate="20160720134134" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="41">
+				<metadata-artifact status="no" details="" size="8139" time="0" location="/home/devel21/.ivy2/cache/org.pac4j/pac4j-oauth/ivy-1.9.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/pac4j/pac4j-oauth/1.9.1/pac4j-oauth-1.9.1.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.9.1" rev-constraint-default="1.9.1" rev-constraint-dynamic="1.9.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="pac4j-oauth" type="jar" ext="jar" status="no" details="" size="150516" time="0" location="/home/devel21/.ivy2/cache/org.pac4j/pac4j-oauth/jars/pac4j-oauth-1.9.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pac4j/pac4j-oauth/1.9.1/pac4j-oauth-1.9.1.jar"/>
+					</artifact>
+					<artifact name="pac4j-oauth" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="97693" time="518" location="/home/devel21/.ivy2/cache/org.pac4j/pac4j-oauth/srcs/pac4j-oauth-1.9.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pac4j/pac4j-oauth/1.9.1/pac4j-oauth-1.9.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.6.5" status="release" pubdate="20160119105531" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="45">
+				<metadata-artifact status="no" details="" size="8821" time="0" location="/home/devel21/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="858568" time="977" location="/home/devel21/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5-sources.jar"/>
+					</artifact>
+					<artifact name="jackson-databind" type="jar" ext="jar" status="successful" details="" size="1171380" time="1037" location="/home/devel21/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.6.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.6.5" status="release" pubdate="20160119105155" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="46">
+				<metadata-artifact status="no" details="" size="6926" time="0" location="/home/devel21/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="271958" time="823" location="/home/devel21/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5-sources.jar"/>
+					</artifact>
+					<artifact name="jackson-core" type="jar" ext="jar" status="successful" details="" size="258876" time="742" location="/home/devel21/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.6.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scribejava" name="scribejava-apis">
+			<revision name="2.5.3" status="release" pubdate="20160415140602" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="43">
+				<metadata-artifact status="no" details="" size="4190" time="0" location="/home/devel21/.ivy2/cache/com.github.scribejava/scribejava-apis/ivy-2.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/scribejava/scribejava-apis/2.5.3/scribejava-apis-2.5.3.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.3" rev-constraint-default="2.5.3" rev-constraint-dynamic="2.5.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scribejava-apis" type="jar" ext="jar" status="no" details="" size="109835" time="0" location="/home/devel21/.ivy2/cache/com.github.scribejava/scribejava-apis/jars/scribejava-apis-2.5.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/scribejava/scribejava-apis/2.5.3/scribejava-apis-2.5.3.jar"/>
+					</artifact>
+					<artifact name="scribejava-apis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="46341" time="0" location="/home/devel21/.ivy2/cache/com.github.scribejava/scribejava-apis/srcs/scribejava-apis-2.5.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/scribejava/scribejava-apis/2.5.3/scribejava-apis-2.5.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scribejava" name="scribejava-core">
+			<revision name="2.5.3" status="release" pubdate="20160415140538" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="44">
+				<metadata-artifact status="no" details="" size="4035" time="0" location="/home/devel21/.ivy2/cache/com.github.scribejava/scribejava-core/ivy-2.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/scribejava/scribejava-core/2.5.3/scribejava-core-2.5.3.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.3" rev-constraint-default="2.5.3" rev-constraint-dynamic="2.5.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scribejava-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49646" time="0" location="/home/devel21/.ivy2/cache/com.github.scribejava/scribejava-core/srcs/scribejava-core-2.5.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/scribejava/scribejava-core/2.5.3/scribejava-core-2.5.3-sources.jar"/>
+					</artifact>
+					<artifact name="scribejava-core" type="jar" ext="jar" status="no" details="" size="83682" time="0" location="/home/devel21/.ivy2/cache/com.github.scribejava/scribejava-core/jars/scribejava-core-2.5.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/scribejava/scribejava-core/2.5.3/scribejava-core-2.5.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.pac4j" name="spark-pac4j">
+			<revision name="1.2.0" status="release" pubdate="20160801194943" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/pac4j/spark-pac4j" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="39">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3691" time="0" location="/home/devel21/.ivy2/cache/org.pac4j/spark-pac4j/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/pac4j/spark-pac4j/1.2.0/spark-pac4j-1.2.0.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spark-pac4j" type="jar" ext="jar" status="no" details="" size="9483" time="0" location="/home/devel21/.ivy2/cache/org.pac4j/spark-pac4j/jars/spark-pac4j-1.2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pac4j/spark-pac4j/1.2.0/spark-pac4j-1.2.0.jar"/>
+					</artifact>
+					<artifact name="spark-pac4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7194" time="0" location="/home/devel21/.ivy2/cache/org.pac4j/spark-pac4j/srcs/spark-pac4j-1.2.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pac4j/spark-pac4j/1.2.0/spark-pac4j-1.2.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.pac4j" name="pac4j-core">
+			<revision name="1.9.1" status="release" pubdate="20160720133948" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="40">
+				<metadata-artifact status="no" details="" size="8362" time="0" location="/home/devel21/.ivy2/cache/org.pac4j/pac4j-core/ivy-1.9.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/pac4j/pac4j-core/1.9.1/pac4j-core-1.9.1.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.9.1" rev-constraint-default="1.9.1" rev-constraint-dynamic="1.9.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="pac4j-core" type="jar" ext="jar" status="no" details="" size="154350" time="0" location="/home/devel21/.ivy2/cache/org.pac4j/pac4j-core/jars/pac4j-core-1.9.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pac4j/pac4j-core/1.9.1/pac4j-core-1.9.1.jar"/>
+					</artifact>
+					<artifact name="pac4j-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="104199" time="495" location="/home/devel21/.ivy2/cache/org.pac4j/pac4j-core/srcs/pac4j-core-1.9.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pac4j/pac4j-core/1.9.1/pac4j-core-1.9.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.10" status="release" pubdate="20141106201535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="42">
+				<metadata-artifact status="no" details="" size="10506" time="0" location="/home/devel21/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="301032" time="0" location="/home/devel21/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar"/>
+					</artifact>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="284184" time="0" location="/home/devel21/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sparkjava" name="spark-core">
+			<revision name="2.5.4" status="release" pubdate="20161202231128" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.sparkjava.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="24">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5554" time="0" location="/home/devel21/.ivy2/cache/com.sparkjava/spark-core/ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sparkjava/spark-core/2.5.4/spark-core-2.5.4.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spark-core" type="jar" ext="jar" status="successful" details="" size="145619" time="358" location="/home/devel21/.ivy2/cache/com.sparkjava/spark-core/jars/spark-core-2.5.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sparkjava/spark-core/2.5.4/spark-core-2.5.4.jar"/>
+					</artifact>
+					<artifact name="spark-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="127960" time="521" location="/home/devel21/.ivy2/cache/com.sparkjava/spark-core/srcs/spark-core-2.5.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sparkjava/spark-core/2.5.4/spark-core-2.5.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty.websocket" name="websocket-server">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107002628" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="34">
+				<metadata-artifact status="no" details="" size="11632" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-server/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-server/9.3.6.v20151106/websocket-server-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="websocket-server" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="27214" time="529" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-server/srcs/websocket-server-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-server/9.3.6.v20151106/websocket-server-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+					<artifact name="websocket-server" type="jar" ext="jar" status="no" details="" size="37950" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-server/jars/websocket-server-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-server/9.3.6.v20151106/websocket-server-9.3.6.v20151106.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty.websocket" name="websocket-servlet">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107002603" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="38">
+				<metadata-artifact status="no" details="" size="10533" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-servlet/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-servlet/9.3.6.v20151106/websocket-servlet-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="websocket-servlet" type="jar" ext="jar" status="no" details="" size="18181" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-servlet/jars/websocket-servlet-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-servlet/9.3.6.v20151106/websocket-servlet-9.3.6.v20151106.jar"/>
+					</artifact>
+					<artifact name="websocket-servlet" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="13765" time="443" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-servlet/srcs/websocket-servlet-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-servlet/9.3.6.v20151106/websocket-servlet-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty.websocket" name="websocket-client">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107002538" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="37">
+				<metadata-artifact status="no" details="" size="11027" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.3.6.v20151106/websocket-client-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="websocket-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="24722" time="446" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/srcs/websocket-client-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.3.6.v20151106/websocket-client-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+					<artifact name="websocket-client" type="jar" ext="jar" status="no" details="" size="36019" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/jars/websocket-client-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.3.6.v20151106/websocket-client-9.3.6.v20151106.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty.websocket" name="websocket-common">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107002511" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="35">
+				<metadata-artifact status="no" details="" size="10750" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.3.6.v20151106/websocket-common-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="websocket-common" type="jar" ext="jar" status="no" details="" size="188066" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/jars/websocket-common-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.3.6.v20151106/websocket-common-9.3.6.v20151106.jar"/>
+					</artifact>
+					<artifact name="websocket-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="126737" time="507" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/srcs/websocket-common-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.3.6.v20151106/websocket-common-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty.websocket" name="websocket-api">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107002441" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="36">
+				<metadata-artifact status="no" details="" size="10213" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.3.6.v20151106/websocket-api-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="websocket-api" type="jar" ext="jar" status="no" details="" size="45301" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/jars/websocket-api-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.3.6.v20151106/websocket-api-9.3.6.v20151106.jar"/>
+					</artifact>
+					<artifact name="websocket-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="49966" time="461" location="/home/devel21/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/srcs/websocket-api-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.3.6.v20151106/websocket-api-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-webapp">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107001559" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="30">
+				<metadata-artifact status="no" details="" size="9284" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-webapp/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-webapp/9.3.6.v20151106/jetty-webapp-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jetty-webapp" type="jar" ext="jar" status="no" details="" size="111130" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-webapp/jars/jetty-webapp-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-webapp/9.3.6.v20151106/jetty-webapp-9.3.6.v20151106.jar"/>
+					</artifact>
+					<artifact name="jetty-webapp" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="77743" time="476" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-webapp/srcs/jetty-webapp-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-webapp/9.3.6.v20151106/jetty-webapp-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-servlet">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107001503" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="32">
+				<metadata-artifact status="no" details="" size="9122" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-servlet/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/9.3.6.v20151106/jetty-servlet-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jetty-servlet" type="jar" ext="jar" status="no" details="" size="113426" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-servlet/jars/jetty-servlet-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/9.3.6.v20151106/jetty-servlet-9.3.6.v20151106.jar"/>
+					</artifact>
+					<artifact name="jetty-servlet" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="65637" time="472" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-servlet/srcs/jetty-servlet-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/9.3.6.v20151106/jetty-servlet-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-security">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107001415" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="33">
+				<metadata-artifact status="no" details="" size="8988" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-security/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/9.3.6.v20151106/jetty-security-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jetty-security" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="65825" time="472" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-security/srcs/jetty-security-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/9.3.6.v20151106/jetty-security-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+					<artifact name="jetty-security" type="jar" ext="jar" status="no" details="" size="91199" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-security/jars/jetty-security-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/9.3.6.v20151106/jetty-security-9.3.6.v20151106.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-server">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107001336" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="25">
+				<metadata-artifact status="no" details="" size="9783" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-server/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.3.6.v20151106/jetty-server-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jetty-server" type="jar" ext="jar" status="no" details="" size="481502" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-server/jars/jetty-server-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.3.6.v20151106/jetty-server-9.3.6.v20151106.jar"/>
+					</artifact>
+					<artifact name="jetty-server" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="309381" time="641" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-server/srcs/jetty-server-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.3.6.v20151106/jetty-server-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-xml">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107001216" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="31">
+				<metadata-artifact status="no" details="" size="8922" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-xml/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-xml/9.3.6.v20151106/jetty-xml-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jetty-xml" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="31177" time="450" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-xml/srcs/jetty-xml-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-xml/9.3.6.v20151106/jetty-xml-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+					<artifact name="jetty-xml" type="jar" ext="jar" status="no" details="" size="50312" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-xml/jars/jetty-xml-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-xml/9.3.6.v20151106/jetty-xml-9.3.6.v20151106.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-io">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107001155" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="29">
+				<metadata-artifact status="no" details="" size="9102" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-io/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.3.6.v20151106/jetty-io-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jetty-io" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="57430" time="470" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-io/srcs/jetty-io-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.3.6.v20151106/jetty-io-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+					<artifact name="jetty-io" type="jar" ext="jar" status="no" details="" size="105099" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-io/jars/jetty-io-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.3.6.v20151106/jetty-io-9.3.6.v20151106.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-http">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107001129" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="27">
+				<metadata-artifact status="no" details="" size="8932" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-http/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.3.6.v20151106/jetty-http-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jetty-http" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="69632" time="471" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-http/srcs/jetty-http-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.3.6.v20151106/jetty-http-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+					<artifact name="jetty-http" type="jar" ext="jar" status="no" details="" size="116853" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.3.6.v20151106/jetty-http-9.3.6.v20151106.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-util">
+			<revision name="9.3.6.v20151106" status="release" pubdate="20151107001035" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="28">
+				<metadata-artifact status="no" details="" size="9320" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-util/ivy-9.3.6.v20151106.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.3.6.v20151106/jetty-util-9.3.6.v20151106.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.6.v20151106" rev-constraint-default="9.3.6.v20151106" rev-constraint-dynamic="9.3.6.v20151106" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jetty-util" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="289096" time="663" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-util/srcs/jetty-util-9.3.6.v20151106-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.3.6.v20151106/jetty-util-9.3.6.v20151106-sources.jar"/>
+					</artifact>
+					<artifact name="jetty-util" type="jar" ext="jar" status="no" details="" size="413963" time="0" location="/home/devel21/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-9.3.6.v20151106.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.3.6.v20151106/jetty-util-9.3.6.v20151106.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet" name="javax.servlet-api">
+			<revision name="3.1.0" status="release" pubdate="20130426065239" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://servlet-spec.java.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="26">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="no" details="" size="4276" time="0" location="/home/devel21/.ivy2/cache/javax.servlet/javax.servlet-api/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="javax.servlet-api" type="jar" ext="jar" status="no" details="" size="95806" time="0" location="/home/devel21/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
+					</artifact>
+					<artifact name="javax.servlet-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="223386" time="0" location="/home/devel21/.ivy2/cache/javax.servlet/javax.servlet-api/srcs/javax.servlet-api-3.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalikejdbc" name="scalikejdbc-config_2.11">
+			<revision name="2.5.2" status="release" pubdate="20170429120338" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalikejdbc.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="22">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4086" time="0" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-config_2.11/ivy-2.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-config_2.11/2.5.2/scalikejdbc-config_2.11-2.5.2.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalikejdbc-config_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="5146" time="443" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-config_2.11/srcs/scalikejdbc-config_2.11-2.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-config_2.11/2.5.2/scalikejdbc-config_2.11-2.5.2-sources.jar"/>
+					</artifact>
+					<artifact name="scalikejdbc-config_2.11" type="jar" ext="jar" status="no" details="" size="60147" time="0" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-config_2.11/jars/scalikejdbc-config_2.11-2.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-config_2.11/2.5.2/scalikejdbc-config_2.11-2.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.1" status="release" pubdate="20140502215416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="23">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2878" time="0" location="/home/devel21/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="config" type="jar" ext="jar" status="no" details="" size="219554" time="0" location="/home/devel21/.ivy2/cache/com.typesafe/config/jars/config-1.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+					</artifact>
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="132611" time="0" location="/home/devel21/.ivy2/cache/com.typesafe/config/srcs/config-1.2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalikejdbc" name="scalikejdbc_2.11">
+			<revision name="2.5.2" status="release" pubdate="20170429120427" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalikejdbc.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3226" time="0" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc_2.11/ivy-2.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc_2.11/2.5.2/scalikejdbc_2.11-2.5.2.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalikejdbc_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1277" time="436" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc_2.11/srcs/scalikejdbc_2.11-2.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc_2.11/2.5.2/scalikejdbc_2.11-2.5.2-sources.jar"/>
+					</artifact>
+					<artifact name="scalikejdbc_2.11" type="jar" ext="jar" status="no" details="" size="9153" time="0" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc_2.11/jars/scalikejdbc_2.11-2.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc_2.11/2.5.2/scalikejdbc_2.11-2.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalikejdbc" name="scalikejdbc-interpolation_2.11">
+			<revision name="2.5.2" status="release" pubdate="20170429120409" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalikejdbc.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4269" time="0" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-interpolation_2.11/ivy-2.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation_2.11/2.5.2/scalikejdbc-interpolation_2.11-2.5.2.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalikejdbc-interpolation_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="11236" time="442" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-interpolation_2.11/srcs/scalikejdbc-interpolation_2.11-2.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation_2.11/2.5.2/scalikejdbc-interpolation_2.11-2.5.2-sources.jar"/>
+					</artifact>
+					<artifact name="scalikejdbc-interpolation_2.11" type="jar" ext="jar" status="no" details="" size="353630" time="0" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-interpolation_2.11/jars/scalikejdbc-interpolation_2.11-2.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation_2.11/2.5.2/scalikejdbc-interpolation_2.11-2.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalikejdbc" name="scalikejdbc-interpolation-macro_2.11">
+			<revision name="2.5.2" status="release" pubdate="20170429120354" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalikejdbc.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="21">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3286" time="0" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-interpolation-macro_2.11/ivy-2.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation-macro_2.11/2.5.2/scalikejdbc-interpolation-macro_2.11-2.5.2.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalikejdbc-interpolation-macro_2.11" type="jar" ext="jar" status="no" details="" size="12083" time="0" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-interpolation-macro_2.11/jars/scalikejdbc-interpolation-macro_2.11-2.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation-macro_2.11/2.5.2/scalikejdbc-interpolation-macro_2.11-2.5.2.jar"/>
+					</artifact>
+					<artifact name="scalikejdbc-interpolation-macro_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1135" time="433" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-interpolation-macro_2.11/srcs/scalikejdbc-interpolation-macro_2.11-2.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation-macro_2.11/2.5.2/scalikejdbc-interpolation-macro_2.11-2.5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalikejdbc" name="scalikejdbc-core_2.11">
+			<revision name="2.5.2" status="release" pubdate="20170429120258" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalikejdbc.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="5187" time="0" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-core_2.11/ivy-2.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-core_2.11/2.5.2/scalikejdbc-core_2.11-2.5.2.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalikejdbc-core_2.11" type="jar" ext="jar" status="no" details="" size="3224621" time="0" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-core_2.11/jars/scalikejdbc-core_2.11-2.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-core_2.11/2.5.2/scalikejdbc-core_2.11-2.5.2.jar"/>
+					</artifact>
+					<artifact name="scalikejdbc-core_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="126913" time="527" location="/home/devel21/.ivy2/cache/org.scalikejdbc/scalikejdbc-core_2.11/srcs/scalikejdbc-core_2.11-2.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-core_2.11/2.5.2/scalikejdbc-core_2.11-2.5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.4" status="release" pubdate="20150430200747" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="19">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2929" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42276" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.0.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-sources.jar"/>
+					</artifact>
+					<artifact name="scala-parser-combinators_2.11" type="jar" ext="jar" status="no" details="" size="423753" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/jars/scala-parser-combinators_2.11-1.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.8.1" status="release" pubdate="20151002165804" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="18">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6434" time="0" location="/home/devel21/.ivy2/cache/org.joda/joda-convert/ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.8.1/joda-convert-1.8.1.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="joda-convert" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="45686" time="458" location="/home/devel21/.ivy2/cache/org.joda/joda-convert/srcs/joda-convert-1.8.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.8.1/joda-convert-1.8.1-sources.jar"/>
+					</artifact>
+					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="111521" time="0" location="/home/devel21/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.8.1/joda-convert-1.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.9.5" status="release" pubdate="20161103223647" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6701" time="0" location="/home/devel21/.ivy2/cache/joda-time/joda-time/ivy-2.9.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.5/joda-time-2.9.5.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.9.5" rev-constraint-default="2.9.5" rev-constraint-dynamic="2.9.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="777266" time="982" location="/home/devel21/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.5/joda-time-2.9.5-sources.jar"/>
+					</artifact>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="632037" time="0" location="/home/devel21/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.5/joda-time-2.9.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-dbcp2">
+			<revision name="2.1.1" status="release" pubdate="20150803063919" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/dbcp/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
+				<metadata-artifact status="no" details="" size="11767" time="0" location="/home/devel21/.ivy2/cache/org.apache.commons/commons-dbcp2/ivy-2.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="commons-dbcp2" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="162798" time="545" location="/home/devel21/.ivy2/cache/org.apache.commons/commons-dbcp2/srcs/commons-dbcp2-2.1.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1-sources.jar"/>
+					</artifact>
+					<artifact name="commons-dbcp2" type="jar" ext="jar" status="no" details="" size="174167" time="0" location="/home/devel21/.ivy2/cache/org.apache.commons/commons-dbcp2/jars/commons-dbcp2-2.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-pool2">
+			<revision name="2.4.2" status="release" pubdate="20150729082011" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-pool/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
+				<metadata-artifact status="no" details="" size="10548" time="0" location="/home/devel21/.ivy2/cache/org.apache.commons/commons-pool2/ivy-2.4.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.4.2" rev-constraint-default="2.4.2" rev-constraint-dynamic="2.4.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="commons-pool2" type="jar" ext="jar" status="no" details="" size="111969" time="0" location="/home/devel21/.ivy2/cache/org.apache.commons/commons-pool2/jars/commons-pool2-2.4.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar"/>
+					</artifact>
+					<artifact name="commons-pool2" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="117433" time="504" location="/home/devel21/.ivy2/cache/org.apache.commons/commons-pool2/srcs/commons-pool2-2.4.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.6.0" status="release" pubdate="20150717060350" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+				<metadata-artifact status="no" details="" size="6380" time="0" location="/home/devel21/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="50126" time="469" location="/home/devel21/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.6.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0-sources.jar"/>
+					</artifact>
+					<artifact name="jackson-annotations" type="jar" ext="jar" status="successful" details="" size="46968" time="298" location="/home/devel21/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-jackson_2.11">
+			<revision name="3.3.0" status="release" pubdate="20151003190705" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2966" time="0" location="/home/devel21/.ivy2/cache/org.json4s/json4s-jackson_2.11/ivy-3.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.3.0/json4s-jackson_2.11-3.3.0.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-jackson_2.11" type="jar" ext="jar" status="no" details="" size="41802" time="0" location="/home/devel21/.ivy2/cache/org.json4s/json4s-jackson_2.11/jars/json4s-jackson_2.11-3.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.3.0/json4s-jackson_2.11-3.3.0.jar"/>
+					</artifact>
+					<artifact name="json4s-jackson_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7259" time="443" location="/home/devel21/.ivy2/cache/org.json4s/json4s-jackson_2.11/srcs/json4s-jackson_2.11-3.3.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.3.0/json4s-jackson_2.11-3.3.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-core_2.11">
+			<revision name="3.3.0" status="release" pubdate="20151003190714" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3249" time="0" location="/home/devel21/.ivy2/cache/org.json4s/json4s-core_2.11/ivy-3.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.3.0/json4s-core_2.11-3.3.0.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-core_2.11" type="jar" ext="jar" status="no" details="" size="615848" time="0" location="/home/devel21/.ivy2/cache/org.json4s/json4s-core_2.11/jars/json4s-core_2.11-3.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.3.0/json4s-core_2.11-3.3.0.jar"/>
+					</artifact>
+					<artifact name="json4s-core_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="41841" time="458" location="/home/devel21/.ivy2/cache/org.json4s/json4s-core_2.11/srcs/json4s-core_2.11-3.3.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.3.0/json4s-core_2.11-3.3.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.5" status="release" pubdate="20150725011224" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3137" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109244" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.0.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5-sources.jar"/>
+					</artifact>
+					<artifact name="scala-xml_2.11" type="jar" ext="jar" status="successful" details="" size="671138" time="921" location="/home/devel21/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/jars/scala-xml_2.11-1.0.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.8" status="release" pubdate="20150826172928" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
+				<metadata-artifact status="no" details="" size="4211" time="0" location="/home/devel21/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.8" rev-constraint-default="2.8" rev-constraint-dynamic="2.8" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27125" time="0" location="/home/devel21/.ivy2/cache/com.thoughtworks.paranamer/paranamer/srcs/paranamer-2.8-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar"/>
+					</artifact>
+					<artifact name="paranamer" type="jar" ext="jar" status="no" details="" size="34654" time="0" location="/home/devel21/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-scalap_2.11">
+			<revision name="3.3.0" status="release" pubdate="20151003190721" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2657" time="0" location="/home/devel21/.ivy2/cache/org.json4s/json4s-scalap_2.11/ivy-3.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.3.0/json4s-scalap_2.11-3.3.0.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-scalap_2.11" type="jar" ext="jar" status="no" details="" size="607724" time="0" location="/home/devel21/.ivy2/cache/org.json4s/json4s-scalap_2.11/jars/json4s-scalap_2.11-3.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.3.0/json4s-scalap_2.11-3.3.0.jar"/>
+					</artifact>
+					<artifact name="json4s-scalap_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18563" time="445" location="/home/devel21/.ivy2/cache/org.json4s/json4s-scalap_2.11/srcs/json4s-scalap_2.11-3.3.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.3.0/json4s-scalap_2.11-3.3.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-ast_2.11">
+			<revision name="3.3.0" status="release" pubdate="20151003190645" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2648" time="0" location="/home/devel21/.ivy2/cache/org.json4s/json4s-ast_2.11/ivy-3.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.3.0/json4s-ast_2.11-3.3.0.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-ast_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7383" time="445" location="/home/devel21/.ivy2/cache/org.json4s/json4s-ast_2.11/srcs/json4s-ast_2.11-3.3.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.3.0/json4s-ast_2.11-3.3.0-sources.jar"/>
+					</artifact>
+					<artifact name="json4s-ast_2.11" type="jar" ext="jar" status="no" details="" size="87091" time="0" location="/home/devel21/.ivy2/cache/org.json4s/json4s-ast_2.11/jars/json4s-ast_2.11-3.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.3.0/json4s-ast_2.11-3.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.1.2" status="release" pubdate="20140403024238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10622" time="0" location="/home/devel21/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="222634" time="602" location="/home/devel21/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2-sources.jar"/>
+					</artifact>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="270750" time="0" location="/home/devel21/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.1.2" status="release" pubdate="20140403024047" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="8410" time="0" location="/home/devel21/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="368594" time="713" location="/home/devel21/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2-sources.jar"/>
+					</artifact>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="427729" time="0" location="/home/devel21/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="jcl-over-slf4j">
+			<revision name="1.7.24" status="release" pubdate="20170224170601" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<metadata-artifact status="no" details="" size="5183" time="0" location="/home/devel21/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.24.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.7.24" rev-constraint-default="1.7.24" rev-constraint-dynamic="1.7.24" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jcl-over-slf4j" type="jar" ext="jar" status="no" details="" size="16516" time="0" location="/home/devel21/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.24.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24.jar"/>
+					</artifact>
+					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="23239" time="446" location="/home/devel21/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.24-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.24" status="release" pubdate="20170224170508" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+				<metadata-artifact status="no" details="" size="5109" time="0" location="/home/devel21/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.24.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.7.24" rev-constraint-default="1.7.24" rev-constraint-dynamic="1.7.24" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41205" time="0" location="/home/devel21/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.24.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55538" time="470" location="/home/devel21/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.24-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.11" status="release" pubdate="20170414015043" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2829" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.11/scala-reflect-2.11.11.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4602981" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.11/scala-reflect-2.11.11.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="565435" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.11.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.11/scala-reflect-2.11.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.11" status="release" pubdate="20170414015031" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2656" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.11/scala-library-2.11.11.pom"/>
+				<caller organisation="eservice-patent" name="eservice-patent$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="911961" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.11/scala-library-2.11.11-sources.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5748808" time="0" location="/home/devel21/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.11/scala-library-2.11.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

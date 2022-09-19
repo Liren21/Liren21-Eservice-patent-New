@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="eservice-patent"
+		module="eservice-patent_2.11"
+		revision="1.0"
+		status="integration"
+		publication="20220919163310"
+	>
+		<description>
+		eservice-patent
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+		<conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+		<conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+		<conf name="plugin" visibility="private" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="eservice-patent_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="eservice-patent_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="eservice-patent_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="eservice-patent_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.11" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.11" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.11" conf="compile->default(compile)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.24" conf="provided->default(compile)"/>
+		<dependency org="org.slf4j" name="jcl-over-slf4j" rev="1.7.24" conf="compile->default(compile)">
+			<exclude org="org.slf4j" module="slf4j-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.2" conf="compile->default(compile)">
+			<exclude org="org.slf4j" module="slf4j-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.scalatest" name="scalatest_2.11" rev="2.2.4" conf="test->default(compile)"/>
+		<dependency org="org.json4s" name="json4s-jackson_2.11" rev="3.3.0" conf="compile->default(compile)"/>
+		<dependency org="org.scalikejdbc" name="scalikejdbc_2.11" rev="2.5.2" conf="compile->default(compile)">
+			<exclude org="commons-logging" module="commons-logging" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.scalikejdbc" name="scalikejdbc-config_2.11" rev="2.5.2" conf="compile->default(compile)">
+			<exclude org="commons-logging" module="commons-logging" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="oracle" name="oracle-jdbc-connector" rev="10.2.0.5.0" conf="compile->default(compile)"/>
+		<dependency org="com.zaxxer" name="HikariCP" rev="2.4.6" conf="test->default(compile)"/>
+		<dependency org="com.sparkjava" name="spark-core" rev="2.5.4" conf="compile->default(compile)"/>
+		<dependency org="org.pac4j" name="spark-pac4j" rev="1.2.0" conf="compile->default(compile)"/>
+		<dependency org="org.pac4j" name="pac4j-oauth" rev="1.9.1" conf="compile->default(compile)"/>
+		<dependency org="com.ning" name="async-http-client" rev="1.9.40" conf="compile->default(compile)"/>
+		<dependency org="org.apache.poi" name="poi-ooxml" rev="3.17" conf="compile->default(compile)"/>
+	</dependencies>
+</ivy-module>
