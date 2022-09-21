@@ -1,14 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './PassportData.scss'
 import {observer} from 'mobx-react-lite'
 import {Button, Card, Col, Form, Row} from "react-bootstrap";
 import FormControlApp from "../../../../../../../core/components/FormControlApp/FormControlApp";
-import pagesStore from "../../../../../../lib/store/pages-store";
 import ColApp from "../../../../../../../core/components/ColApp/ColApp";
 
+interface IPassportData {
+    row: any
+}
 
-export default observer(() => {
-
+export default observer(({row}: IPassportData) => {
+    const [series, setSeries] = useState(row.series)
+    const [number, setNumber] = useState(row.number)
+    const [whoGave, setWhoGave] = useState(row.whoGave)
+    const [date, setDate] = useState(row.date)
+    const [citizenship, setCitizenship] = useState(row.citizenship)
+    console.log(row)
     return (
         <div style={{display: 'inline-block'}}>
             <Card.Title>Паспортные данные</Card.Title>
@@ -26,8 +33,8 @@ export default observer(() => {
                                                     classes={'home-from-control'}
                                                     id={'PassportSeries'}
                                                     label={'Серия паспорта'}
-                                                    value={pagesStore.name}
-                                                    onChange={(val) => pagesStore.setName(val)}
+                                                    value={series}
+                                                    onChange={(val) => setSeries(val)}
                                                 />
                                             }
                                         />
@@ -38,8 +45,8 @@ export default observer(() => {
                                                     classes={'home-from-control'}
                                                     id={'passportNumber'}
                                                     label={'Номер паспорта'}
-                                                    value={pagesStore.name}
-                                                    onChange={(val) => pagesStore.setName(val)}
+                                                    value={number}
+                                                    onChange={(val) => setNumber(val)}
                                                 />
                                             }
                                         />
@@ -50,8 +57,8 @@ export default observer(() => {
                                                     classes={'home-from-control'}
                                                     id={'nationality'}
                                                     label={'Гражданство'}
-                                                    value={pagesStore.creationDate}
-                                                    onChange={(val) => pagesStore.setCreationDate(val)}
+                                                    value={citizenship}
+                                                    onChange={(val) => setCitizenship(val)}
                                                 />
                                             }
                                         />
@@ -61,19 +68,24 @@ export default observer(() => {
                                                     classes={'home-from-control'}
                                                     id={'whenIssued'}
                                                     label={'Когда выдан паспорт'}
-                                                    value={pagesStore.creator}
-                                                    onChange={(val) => pagesStore.setCreator(val)}
+                                                    value={date}
+                                                    onChange={(val) => setDate(val)}
 
                                                 />
                                             }
                                         />
+                                        <FormControlApp
+                                            as={"textarea"}
+                                            classes={'home-from-control'}
+                                            id={'whenIssued'}
+                                            label={'Кем выдан паспорт'}
+                                            value={whoGave}
+                                            onChange={(val) => setWhoGave(val)}
+
+                                        />
 
                                     </Row>
                                     <br/>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                        <Form.Label>Кем выдан паспорт</Form.Label>
-                                        <Form.Control style={{borderRadius: '15px'}} as="textarea" rows={3}/>
-                                    </Form.Group>
                                 </Form>
                                 <Button style={{float: "right"}}>Сохранить</Button>
                             </Card.Body>

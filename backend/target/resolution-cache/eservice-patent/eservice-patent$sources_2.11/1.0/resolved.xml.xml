@@ -4,7 +4,7 @@
 		module="eservice-patent$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20220919163413"
+		publication="20220920084116"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -179,15 +179,6 @@
 		</dependency>
 		<dependency org="org.apache.commons" name="commons-collections4" rev="4.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="commons-collections4" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="org.apache.poi" name="poi-ooxml-schemas" rev="3.17" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="poi-ooxml-schemas" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="org.apache.xmlbeans" name="xmlbeans" rev="2.6.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="xmlbeans" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="stax" name="stax-api" rev="1.0.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="stax-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="com.github.virtuald" name="curvesapi" rev="1.04" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="curvesapi" type="src" ext="jar" conf="sources" e:classifier="sources"/>

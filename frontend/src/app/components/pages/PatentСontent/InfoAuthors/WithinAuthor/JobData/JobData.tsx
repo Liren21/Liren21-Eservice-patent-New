@@ -1,13 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {observer} from 'mobx-react-lite'
 import {Button, Card, Col, Form, Row} from "react-bootstrap";
 import FormControlApp from "../../../../../../../core/components/FormControlApp/FormControlApp";
-import pagesStore from "../../../../../../lib/store/pages-store";
-import ColApp from "../../../../../../../core/components/ColApp/ColApp";
+interface IJobData {
+    row: any
+}
 
-
-export default observer(() => {
-
+export default observer(({row}:IJobData) => {
+    const [work,setWork] = useState(row.work)
+    const [position,setPosition] = useState(row.position)
+    const [department,setDepartment] = useState(row.department)
     return (
         <div style={{display: 'inline-block'}}>
             <Card.Title>Работа</Card.Title>
@@ -23,23 +25,23 @@ export default observer(() => {
                                             classes={'home-from-control'}
                                             id={'workplace'}
                                             label={'Место работы'}
-                                            value={pagesStore.name}
-                                            onChange={(val) => pagesStore.setName(val)}
+                                            value={work}
+                                            onChange={(val) => setWork(val)}
                                         />
                                         <FormControlApp
                                             classes={'home-from-control'}
                                             id={'position'}
                                             label={'Должность'}
-                                            value={pagesStore.name}
-                                            onChange={(val) => pagesStore.setName(val)}
+                                            value={position}
+                                            onChange={(val) => setPosition(val)}
                                         />
                                         <FormControlApp
                                             style={{width: '100%'}}
                                             classes={'home-from-control'}
                                             id={'department'}
                                             label={'Кафедра'}
-                                            value={pagesStore.creationDate}
-                                            onChange={(val) => pagesStore.setCreationDate(val)}
+                                            value={department}
+                                            onChange={(val) => setDepartment(val)}
                                         />
                                     </Row>
                                 </Form>

@@ -5,3 +5,60 @@
 16:36:01.877 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
 16:36:02.009 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@4c19736b{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
 16:36:02.010 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @2112ms
+09:55:58.811 [Thread-0] INFO  org.eclipse.jetty.util.log           Logging initialized @2278ms
+09:55:58.908 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        == Spark has ignited ...
+09:55:58.912 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        >> Listening on 0.0.0.0:4567
+09:55:58.915 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
+09:55:58.929 [main] INFO  scalikejdbc.config.DBs$              connectionTimeoutMillis is deprecated. Use poolConnectionTimeoutMillis instead.
+09:55:59.056 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@34cbce7c{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+09:55:59.056 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @2528ms
+19:12:19.578 [qtp477352253-19] ERROR e.o.e.patent.mvc.AppController$      No usable value for phone
+Did not find value which can be converted into java.lang.String
+org.json4s.package$MappingException: No usable value for phone
+Did not find value which can be converted into java.lang.String
+	at org.json4s.reflect.package$.fail(package.scala:93) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$ClassInstanceBuilder.org$json4s$Extraction$ClassInstanceBuilder$$buildCtorArg(Extraction.scala:509) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$ClassInstanceBuilder$$anonfun$14.apply(Extraction.scala:529) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$ClassInstanceBuilder$$anonfun$14.apply(Extraction.scala:529) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234) ~[scala-library-2.11.11.jar:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234) ~[scala-library-2.11.11.jar:na]
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59) ~[scala-library-2.11.11.jar:na]
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48) ~[scala-library-2.11.11.jar:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234) ~[scala-library-2.11.11.jar:na]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:104) ~[scala-library-2.11.11.jar:na]
+	at org.json4s.Extraction$ClassInstanceBuilder.org$json4s$Extraction$ClassInstanceBuilder$$instantiate(Extraction.scala:517) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$ClassInstanceBuilder$$anonfun$result$6.apply(Extraction.scala:564) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$ClassInstanceBuilder$$anonfun$result$6.apply(Extraction.scala:559) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$.org$json4s$Extraction$$customOrElse(Extraction.scala:573) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$ClassInstanceBuilder.result(Extraction.scala:559) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$.extract(Extraction.scala:394) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$.extract(Extraction.scala:43) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.ExtractableJsonAstNode.extract(ExtractableJsonAstNode.scala:21) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at edu.omsu.eservice.patent.mvc.AppController$.edu$omsu$eservice$patent$mvc$AppController$$updateAuthorPersonalInfo$1(AppController.scala:381) ~[classes/:na]
+	at edu.omsu.eservice.patent.mvc.AppController$$anonfun$main$18.apply(AppController.scala:802) ~[classes/:na]
+	at edu.omsu.eservice.patent.mvc.AppController$$anonfun$main$18.apply(AppController.scala:802) ~[classes/:na]
+	at edu.omsu.eservice.patent.conf.SparkAPI$$anon$2.handle(SparkAPI.scala:63) ~[classes/:na]
+	at spark.RouteImpl$1.handle(RouteImpl.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:128) ~[spark-core-2.5.4.jar:na]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) [spark-core-2.5.4.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_342]
+Caused by: org.json4s.package$MappingException: Did not find value which can be converted into java.lang.String
+	at org.json4s.Extraction$.convert(Extraction.scala:671) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$.extract(Extraction.scala:388) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	at org.json4s.Extraction$ClassInstanceBuilder.org$json4s$Extraction$ClassInstanceBuilder$$buildCtorArg(Extraction.scala:497) ~[json4s-core_2.11-3.3.0.jar:3.3.0]
+	... 38 common frames omitted
+19:12:19.595 [qtp477352253-19] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/updateAuthorPersonalInfo] has not been mapped in Spark for Accept: [application/json, text/plain, */*]

@@ -3,18 +3,40 @@ import React, {useState} from 'react'
 import {observer} from 'mobx-react-lite'
 import {Button, Card, Col, Form, Row} from "react-bootstrap";
 import FormControlApp from "../../../../../../../core/components/FormControlApp/FormControlApp";
-import pagesStore from "../../../../../../lib/store/pages-store";
-import ColApp from "../../../../../../../core/components/ColApp/ColApp";
-import authorsStore from "../../../../../../lib/store/authors-store";
+import ColApp from "../../../../../../../core/components/ColApp/ColApp"
+import addUser from "../../../../../../lib/store/addUser";
 
 interface IPersonalData {
     row: any
     cell: any
 }
 
-export default observer(({cell, row}: IPersonalData) => {
-    const [surName, setSurName] = useState(cell)
-    console.log(row)
+export default observer(({ row}: IPersonalData) => {
+    const [surName, setSurName] = useState(row.surname)
+    const [name, setName] = useState(row.name)
+    const [lastName, setLastName] = useState(row.lastname)
+    const [birthday, setBirthday] = useState(row.birthday)
+    const [phone, setPhone] = useState(row.phone)
+    const [address, setAddress] = useState(row.address)
+    const [email, setEmail] = useState(row.email)
+    const [contribution, setContribution] = useState(row.contribution)
+    const [isCreator, setIsCreator] = useState(row.isCreator)
+
+    const dataPerson = {
+        surName: surName,
+        name: name,
+        lastName: lastName,
+        birthday: birthday,
+        phone: phone,
+        address: address,
+        email: email,
+        contribution: contribution,
+        isCreator: isCreator
+    }
+
+    const changeIsCreator = (val) => {
+        val ? setIsCreator(1) : setIsCreator(0)
+    }
     return (
         <div style={{display: 'inline-block'}}>
             <Card.Title>Личная информация</Card.Title>
@@ -23,7 +45,9 @@ export default observer(({cell, row}: IPersonalData) => {
                 <Col>
                     <div style={{padding: '0 1%'}}>
                         <Card style={{background: 'rgba(0,0,0,0.03)', borderColor: '#fff'}}>
-                            <Card.Body> <Form.Check type="checkbox" label="Руководитель заявки"/></Card.Body>
+                            <Card.Body> <Form.Check checked={isCreator == 1} onClick={() => changeIsCreator(!isCreator)}
+                                                    type="checkbox"
+                                                    label="Руководитель заявки"/></Card.Body>
                         </Card>
                         <br/>
                         <Card style={{background: 'rgba(0,0,0,0.03)', borderColor: '#fff'}}>
@@ -35,8 +59,8 @@ export default observer(({cell, row}: IPersonalData) => {
                                                 classes={'home-from-control'}
                                                 id={'surName'}
                                                 label={'Фамилия'}
-                                                value={authorsStore.surName}
-                                                onChange={(val) => authorsStore.setSurName(val)}
+                                                value={surName}
+                                                onChange={(val) => setSurName(val)}
 
                                             />
                                         </Col><Col sm>
@@ -44,8 +68,8 @@ export default observer(({cell, row}: IPersonalData) => {
                                             classes={'home-from-control'}
                                             id={'Name'}
                                             label={'Имя'}
-                                            value={authorsStore.name}
-                                            onChange={(val) => authorsStore.setName(val)}
+                                            value={name}
+                                            onChange={(val) => setName(val)}
 
                                         />
                                     </Col><Col sm>
@@ -53,8 +77,8 @@ export default observer(({cell, row}: IPersonalData) => {
                                             classes={'home-from-control'}
                                             id={'lastName'}
                                             label={'Отчество'}
-                                            value={authorsStore.lastName}
-                                            onChange={(val) => authorsStore.setLastName(val)}
+                                            value={lastName}
+                                            onChange={(val) => setLastName(val)}
 
                                         />
                                     </Col>
@@ -69,8 +93,8 @@ export default observer(({cell, row}: IPersonalData) => {
                                                     classes={'home-from-control'}
                                                     id={'Birthday'}
                                                     label={'Дата рождения'}
-                                                    value={authorsStore.birthday}
-                                                    onChange={(val) => authorsStore.setBirthday(val)}
+                                                    value={birthday}
+                                                    onChange={(val) => setBirthday(val)}
 
                                                 />
                                             }
@@ -80,10 +104,10 @@ export default observer(({cell, row}: IPersonalData) => {
                                             body={
                                                 <FormControlApp
                                                     classes={'home-from-control'}
-                                                    id={'Number'}
+                                                    id={'phone'}
                                                     label={'Номер телефона'}
-                                                    value={authorsStore.number}
-                                                    onChange={(val) => authorsStore.setNumber(val)}
+                                                    value={phone}
+                                                    onChange={(val) => setPhone(val)}
 
                                                 />
                                             }
@@ -93,10 +117,10 @@ export default observer(({cell, row}: IPersonalData) => {
                                                 <FormControlApp
                                                     style={{width: '100%'}}
                                                     classes={'home-from-control'}
-                                                    id={'formGridZip'}
+                                                    id={'address'}
                                                     label={'Почтовый адрес'}
-                                                    value={authorsStore.formGridZip}
-                                                    onChange={(val) => authorsStore.setFormGridZip(val)}
+                                                    value={address}
+                                                    onChange={(val) => setAddress(val)}
                                                 />
                                             }
                                         />
@@ -106,8 +130,8 @@ export default observer(({cell, row}: IPersonalData) => {
                                                     classes={'home-from-control'}
                                                     id={'email'}
                                                     label={'Электронный адрес'}
-                                                    value={authorsStore.email}
-                                                    onChange={(val) => authorsStore.setEmail(val)}
+                                                    value={email}
+                                                    onChange={(val) => setEmail(val)}
                                                     placeholder={'Создатель'}
 
                                                 />
@@ -117,10 +141,10 @@ export default observer(({cell, row}: IPersonalData) => {
                                         <FormControlApp
                                             as={'textarea'}
                                             classes={'home-from-control'}
-                                            id={'contAuthor'}
+                                            id={'contribution'}
                                             label={'Вклад автора'}
-                                            value={authorsStore.contAuthor}
-                                            onChange={(val) => authorsStore.setContAuthor(val)}
+                                            value={contribution}
+                                            onChange={(val) => setContribution(val)}
 
 
                                         />
@@ -128,7 +152,9 @@ export default observer(({cell, row}: IPersonalData) => {
                                     </Row>
                                     <br/>
                                 </Form>
-                                <Button style={{float: "right"}}>Сохранить</Button>
+                                <Button
+                                    onClick={() => addUser.UpdateAuthorPersonal(dataPerson)}
+                                    style={{float: "right"}}>Сохранить</Button>
                             </Card.Body>
                         </Card>
                     </div>

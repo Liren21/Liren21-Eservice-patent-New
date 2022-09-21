@@ -163,7 +163,7 @@ export default {
 
         return result
     },
-    async AddExAuthor( id, peopleId) {
+    async AddExAuthor(id, peopleId) {
         appStore.setLoading(true)
 
 
@@ -178,6 +178,48 @@ export default {
 
         await axios
             .post(urls.ADD_EX_AUTHOR, {authId: id, demandId: pagesStore.patentContent['id'], peopId: peopleId},)
+            .then((res) =>
+                handlerSuccess(res, (data) => {
+                    data
+                }),
+            )
+            .catch(handlerError)
+            .then(() => appStore.setLoading(false))
+
+
+    },
+    async UpdateAuthorPersonalInfo(dataPerson) {
+        appStore.setLoading(true)
+
+
+        const data = {
+            id: 0,
+            peopleId: '0',
+            peopleDate: pagesStore.patentContent['id'],
+            surname: dataPerson.surName,
+            name: dataPerson.name,
+            lastname: dataPerson.lastName,
+            birthday: dataPerson.birthday,
+            address: dataPerson.address,
+            email: dataPerson.email,
+            phone: dataPerson.p,
+            work: '',
+            position: dataPerson.position,
+            department: dataPerson.department,
+            series: '',
+            number: '',
+            whoGave: '',
+            date: '',
+            citizenship: '',
+            contribution: dataPerson.contribution,
+            isCreator: dataPerson.isCreator,
+            isLeader: 0
+        }
+
+        console.log(1)
+
+        await axios
+            .post(urls.UPD_AUTHORS_PERSON_INFO, data,)
             .then((res) =>
                 handlerSuccess(res, (data) => {
                     data

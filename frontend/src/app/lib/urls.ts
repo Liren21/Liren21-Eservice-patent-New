@@ -1,5 +1,3 @@
-
-
 import coreUrls from '../../core/lib/core-urls'
 
 export default {
@@ -12,6 +10,7 @@ export default {
     INSERT_AUTHOR: coreUrls.BACKEND + 'insertAuthor',
     SEARCH_AUTHOR: coreUrls.BACKEND + 'searchAuthor',
     ADD_EX_AUTHOR: coreUrls.BACKEND + 'addExAuthor',
+    UPD_AUTHORS_PERSON_INFO: coreUrls.BACKEND + 'updateAuthorPersonalInfo',
 }
 // CREATE_DOCUMENT: new Address("create", exceptions.ERROR_GET(), exceptions.ERROR_GET()),
 //     //new

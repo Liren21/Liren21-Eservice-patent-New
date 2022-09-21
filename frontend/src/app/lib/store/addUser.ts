@@ -91,6 +91,14 @@ class AddUser implements IAddUser {
             })
             .catch(handlerError)
     }
+    UpdateAuthorPersonal(dataPerson) {
+        // @ts-ignore
+        services.UpdateAuthorPersonalInfo(dataPerson)
+            .then(() => {
+
+            })
+            .catch(handlerError)
+    }
 }
 
 export default new AddUser()

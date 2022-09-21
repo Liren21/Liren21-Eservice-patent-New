@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="provided"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20220919163413"/>
+		date="20220920084117"/>
 	<dependencies>
 		<module organisation="org.slf4j" name="slf4j-api">
 			<revision name="1.7.24" status="release" pubdate="20170224170508" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
@@ -17,7 +17,7 @@
 					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41205" time="0" location="/home/devel21/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.24.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24.jar"/>
 					</artifact>
-					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55538" time="470" location="/home/devel21/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.24-sources.jar">
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55538" time="0" location="/home/devel21/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.24-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24-sources.jar"/>
 					</artifact>
 				</artifacts>

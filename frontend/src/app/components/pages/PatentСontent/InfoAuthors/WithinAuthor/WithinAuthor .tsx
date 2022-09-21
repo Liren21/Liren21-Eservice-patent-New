@@ -32,10 +32,10 @@ export default observer(({row, cell}: IDataUser) => {
                         </Tab>
 
                         <Tab eventKey="PassportData" title="Паспортные данные">
-                            <PassportData/>
+                            <PassportData row={row}/>
                         </Tab>
                         <Tab eventKey="JobInfo" title="Работа">
-                            <JobData/>
+                            <JobData row={row}/>
                         </Tab>
                     </Tabs>
                 </Modal.Body>
