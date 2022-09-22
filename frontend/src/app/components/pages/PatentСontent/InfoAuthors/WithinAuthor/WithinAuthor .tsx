@@ -17,7 +17,7 @@ export default observer(({row, cell}: IDataUser) => {
 
     const handleClose = () => setShow(false)
     const handleShow = () => setShow(true)
-    console.log(row)
+
     return (
         <div style={{textAlign: 'center'}}>
             <Button variant="outline-primary" onClick={handleShow}>

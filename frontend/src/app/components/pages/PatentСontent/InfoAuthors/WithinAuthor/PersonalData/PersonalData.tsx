@@ -31,7 +31,8 @@ export default observer(({ row}: IPersonalData) => {
         address: address,
         email: email,
         contribution: contribution,
-        isCreator: isCreator
+        isCreator: isCreator,
+        isLeader: row.isLeader
     }
 
     const changeIsCreator = (val) => {

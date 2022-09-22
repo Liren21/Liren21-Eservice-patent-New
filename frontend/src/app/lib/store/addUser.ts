@@ -99,6 +99,22 @@ class AddUser implements IAddUser {
             })
             .catch(handlerError)
     }
+    UpdateAuthorPassport(dataPassport) {
+        // @ts-ignore
+        services.UpdateAuthorPassport(dataPassport)
+            .then(() => {
+
+            })
+            .catch(handlerError)
+    }
+    UpdateAuthorJob(dataJob) {
+        // @ts-ignore
+        services.UpdateAuthorJob(dataJob)
+            .then(() => {
+
+            })
+            .catch(handlerError)
+    }
 }
 
 export default new AddUser()

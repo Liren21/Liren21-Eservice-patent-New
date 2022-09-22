@@ -21,6 +21,7 @@ export default {
             .then((res) =>
                 handlerSuccess(res, (data) => {
                     result = data ? data.map((d) => new Demand(d)) : []
+                    console.log(data)
 
                 }),
             )
@@ -193,7 +194,7 @@ export default {
 
 
         const data = {
-            id: 0,
+            id: pagesStore.patentContent['id'],
             peopleId: '0',
             peopleDate: pagesStore.patentContent['id'],
             surname: dataPerson.surName,
@@ -202,10 +203,10 @@ export default {
             birthday: dataPerson.birthday,
             address: dataPerson.address,
             email: dataPerson.email,
-            phone: dataPerson.p,
+            phone: dataPerson.phone,
             work: '',
-            position: dataPerson.position,
-            department: dataPerson.department,
+            position: '',
+            department: '',
             series: '',
             number: '',
             whoGave: '',
@@ -213,13 +214,98 @@ export default {
             citizenship: '',
             contribution: dataPerson.contribution,
             isCreator: dataPerson.isCreator,
-            isLeader: 0
+            isLeader: dataPerson.isLeader
         }
 
-        console.log(1)
+        console.log(data.isLeader)
 
         await axios
             .post(urls.UPD_AUTHORS_PERSON_INFO, data,)
+            .then((res) =>
+                handlerSuccess(res, (data) => {
+                    data
+                }),
+            )
+            .catch(handlerError)
+            .then(() => appStore.setLoading(false))
+
+
+    },
+
+    async UpdateAuthorPassport(dataPassport) {
+        appStore.setLoading(true)
+
+
+        const data = {
+            id: pagesStore.patentContent['id'],
+            peopleId: '0',
+            peopleDate: pagesStore.patentContent['id'],
+            surname: '',
+            name: '',
+            lastname: '',
+            birthday: '',
+            address: '',
+            email: '',
+            phone: '',
+            work: '',
+            position: '',
+            department: '',
+            series: dataPassport.series,
+            number: dataPassport.number,
+            whoGave: dataPassport.whoGave,
+            date: dataPassport.date,
+            citizenship: dataPassport.citizenship,
+            contribution: '',
+            isCreator: dataPassport.isCreator,
+            isLeader: dataPassport.isLeader
+        }
+
+        console.log(data.isLeader)
+
+        await axios
+            .post(urls.UPD_AUTHORS_PASSPORT, data,)
+            .then((res) =>
+                handlerSuccess(res, (data) => {
+                    data
+                }),
+            )
+            .catch(handlerError)
+            .then(() => appStore.setLoading(false))
+
+
+    },
+    async UpdateAuthorJob(dataJob) {
+        appStore.setLoading(true)
+
+
+        const data = {
+            id: pagesStore.patentContent['id'],
+            peopleId: '0',
+            peopleDate: pagesStore.patentContent['id'],
+            surname: '',
+            name: '',
+            lastname: '',
+            birthday: '',
+            address: '',
+            email: '',
+            phone: '',
+            work: dataJob.work,
+            position: dataJob.position,
+            department: dataJob.department,
+            series: '',
+            number: '',
+            whoGave:'',
+            date: '',
+            citizenship: '',
+            contribution: '',
+            isCreator: dataJob.isCreator,
+            isLeader: dataJob.isLeader
+        }
+
+        console.log(data.isLeader)
+
+        await axios
+            .post(urls.UPD_AUTHORS_JOB, data,)
             .then((res) =>
                 handlerSuccess(res, (data) => {
                     data

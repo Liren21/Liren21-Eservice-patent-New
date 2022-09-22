@@ -3,6 +3,7 @@ import TypesPatent from "../models/typesPatent";
 import services from "../services/services";
 import {handlerError} from "../../../core/lib/api/common";
 import Demand from "../models/demand";
+import abstractStore from "./abstract-store";
 
 
 interface IPagesStore {
@@ -78,6 +79,11 @@ class PagesStore implements IPagesStore {
             .then(() => {
             })
             .catch(handlerError)
+    }
+
+    UpdStatus() {
+        console.log(this.patentContent)
+        abstractStore.setPcType(this.patentContent['pcType'])
     }
 }
 

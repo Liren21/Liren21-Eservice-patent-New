@@ -4,6 +4,7 @@ import {observer} from 'mobx-react-lite'
 import {Button, Card, Col, Form, Row} from "react-bootstrap";
 import FormControlApp from "../../../../../../../core/components/FormControlApp/FormControlApp";
 import ColApp from "../../../../../../../core/components/ColApp/ColApp";
+import addUser from "../../../../../../lib/store/addUser";
 
 interface IPassportData {
     row: any
@@ -15,6 +16,17 @@ export default observer(({row}: IPassportData) => {
     const [whoGave, setWhoGave] = useState(row.whoGave)
     const [date, setDate] = useState(row.date)
     const [citizenship, setCitizenship] = useState(row.citizenship)
+
+    const dataPassport = {
+        series: series,
+        number: number,
+        whoGave: whoGave,
+        date: date,
+        citizenship: citizenship,
+        isLeader: row.isLeader,
+        isCreator: row.isCreator,
+
+    }
     console.log(row)
     return (
         <div style={{display: 'inline-block'}}>
@@ -87,7 +99,9 @@ export default observer(({row}: IPassportData) => {
                                     </Row>
                                     <br/>
                                 </Form>
-                                <Button style={{float: "right"}}>Сохранить</Button>
+                                <Button
+                                    onClick={() => addUser.UpdateAuthorPassport(dataPassport)}
+                                    style={{float: "right"}}>Сохранить</Button>
                             </Card.Body>
                         </Card>
                     </div>
