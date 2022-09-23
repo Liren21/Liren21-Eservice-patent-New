@@ -4,6 +4,15 @@ $lBorder: 12px;
 .app {
   margin: 10rem 0;
 
+  .link-patent {
+    padding: 5px;
+  }
+
+  .link-patent:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: $mBorder;
+    padding: 5px;
+  }
 
   .form-control, .css-yk16xz-control, .css-2b097c-container:hover,
   .css-1pahdxg-control:hover, .css-2b097c-container,
@@ -52,4 +61,8 @@ textarea {
 .card-body {
   padding: 1.5rem !important;
 }
+a:hover {
+  border-radius: $mBorder;
+  background: rgba(0, 0, 0, 0.11);
 
+}

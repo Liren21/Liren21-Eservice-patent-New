@@ -1,21 +1,20 @@
-
-
 import './TableApp.scss'
 import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css'
 
-import React, { useEffect, useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import BootstrapTable from 'react-bootstrap-table-next'
 import ToolkitProvider from 'react-bootstrap-table2-toolkit'
-import TableAppModel, { ITableAppProps } from './extensions/table-app-model'
-import { SearchTableApp } from './extensions/SearchTableApp/SearchTableApp'
-import paginationFactory, { PaginationProvider } from 'react-bootstrap-table2-paginator'
+import TableAppModel, {ITableAppProps} from './extensions/table-app-model'
+import {SearchTableApp} from './extensions/SearchTableApp/SearchTableApp'
+import paginationFactory, {PaginationProvider} from 'react-bootstrap-table2-paginator'
 import PaginationProps from '../../lib/models/pagination-props'
-import { getProp } from '../../lib/local-storage/service-storage'
+import {getProp} from '../../lib/local-storage/service-storage'
+
 
 export const TableApp = (props: ITableAppProps): JSX.Element => {
     const [selectedColumns, setSelectedColumns] = useState([])
     const initState = new TableAppModel().init(props, selectedColumns, setSelectedColumns)
-    const paginationProps = new PaginationProps(Object.assign(initState.paginationProps, { tableName: props.id }))
+    const paginationProps = new PaginationProps(Object.assign(initState.paginationProps, {tableName: props.id}))
 
     paginationProps.load()
 
@@ -46,7 +45,12 @@ export const TableApp = (props: ITableAppProps): JSX.Element => {
                 {(toolkitprops) => {
                     return (
                         <div>
-                            {initState.hasSearch ? <SearchTableApp {...toolkitprops.searchProps} /> : null}
+                            {initState.hasSearch ?
+                                <>
+
+                                    <SearchTableApp {...toolkitprops.searchProps} />
+
+                                </> : null}
                             <BootstrapTable
                                 keyField={'id'}
                                 id={initState.id}

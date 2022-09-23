@@ -6,6 +6,7 @@ import { Row } from 'react-bootstrap'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import { InjectedSearchProps } from 'react-bootstrap-table2-toolkit'
+import AddApp from "../../../../../app/components/pages/AddApp /AddApp";
 
 export const SearchTableApp = (props: InjectedSearchProps): JSX.Element => {
     let input
@@ -32,10 +33,13 @@ export const SearchTableApp = (props: InjectedSearchProps): JSX.Element => {
                         onChange={handleChange}
                     />
                 </Col>
-                <Col sm={2}>
+                <Col sm={1}>
                     <Button variant={'outline-primary'} onClick={handleClick}>
                         <i className={'fa fa-search'} title={'Поиск'} />
                     </Button>
+                </Col>
+                <Col sm={1}>
+                    <AddApp/>
                 </Col>
             </Row>
         </div>

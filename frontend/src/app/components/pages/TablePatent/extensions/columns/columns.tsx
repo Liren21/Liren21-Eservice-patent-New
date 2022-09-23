@@ -4,7 +4,6 @@ import routes from "../../../../../lib/routes";
 import pagesStore from "../../../../../lib/store/pages-store";
 
 
-
 export default (): any => {
 
     const formatterAuthors = (cell) => {
@@ -37,9 +36,16 @@ export default (): any => {
     }
 
     const insideLink = (cell, row) => {
-        pagesStore.setIdPatent(row)
 
-        return <Link to={`${routes.PATENT_CONTENT}/${row.id}`} onClick={() => pagesStore.getPatentContent(row.id)} >{cell}</Link>
+        console.log(1)
+        return (
+
+            <Link style={{textDecoration: 'none'}} to={`${routes.PATENT_CONTENT}/${row.id}`}
+                  onClick={() => pagesStore.getPatentContent(row.id)}>
+                <div className={'link-patent'}>{cell}</div>
+            </Link>
+
+        )
 
     }
     return [
@@ -54,7 +60,6 @@ export default (): any => {
             headerStyle: {width: '150px', verticalAlign: 'middle'},
             isLocked: true,
             formatter: insideLink
-            // formatExtraData: modifiedCounter,
         },
         {
             dataField: 'objType',

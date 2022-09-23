@@ -85,7 +85,7 @@ export default observer(() => {
                         />
                     </Row>
                     <Button onClick={kok} className={'home-search-btn'}
-                            variant="outline-primary">Найти</Button>{' '}
+                            variant="outline-primary">   <i className={'fa fa-search'} title={'Поиск'} /> </Button>{' '}
                 </Form>
 
             </Card.Body>

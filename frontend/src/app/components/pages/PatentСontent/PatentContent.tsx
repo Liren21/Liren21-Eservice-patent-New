@@ -6,13 +6,14 @@ import {Button, Col, Nav, Row, Tab} from "react-bootstrap";
 import InfoRID from "./InfoRID/InfoRID";
 import InfoAuthors from "./InfoAuthors/InfoAuthors";
 import InfoAbstract from "./InfoAbstract/InfoAbstract";
+import pagesStore from "../../../lib/store/pages-store";
 
 
 
 
 
 export default observer(() => {
-
+    console.log(pagesStore.idPatent)
 
     return (
         <>

@@ -7,6 +7,7 @@ import pagesStore from "../../../lib/store/pages-store";
 import columns from "./extensions/columns/columns";
 
 
+
 export default observer(() => {
 
 
@@ -19,6 +20,7 @@ export default observer(() => {
                 hasPagination={false}
                 hasColumnsExpander={true}
             />
+
         </>
     )
 })
