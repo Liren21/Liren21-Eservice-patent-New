@@ -4,6 +4,7 @@ import routes from "../../../../../lib/routes";
 import pagesStore from "../../../../../lib/store/pages-store";
 
 
+
 export default (): any => {
 
     const formatterAuthors = (cell) => {
@@ -37,8 +38,9 @@ export default (): any => {
 
     const insideLink = (cell, row) => {
         pagesStore.setIdPatent(row)
-        return <Link to={routes.PATENTCONTENT + "=" + row.id}
-                     onClick={() => pagesStore.getPatentContent(row.id)}>{cell}</Link>
+
+        return <Link to={`${routes.PATENT_CONTENT}/${row.id}`} onClick={() => pagesStore.getPatentContent(row.id)} >{cell}</Link>
+
     }
     return [
         {

@@ -8,5 +8,5 @@ export default {
     EDIT_TABLE: '/edit-table',
     EXPAND_TABLE: '/expand-table',
     SELECT_FORM: '/select-form',
-    PATENTCONTENT: "/:id"
+    PATENT_CONTENT: "/id"
 }

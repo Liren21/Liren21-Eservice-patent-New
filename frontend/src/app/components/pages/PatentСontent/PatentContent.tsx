@@ -9,6 +9,8 @@ import InfoAbstract from "./InfoAbstract/InfoAbstract";
 
 
 
+
+
 export default observer(() => {
 
 

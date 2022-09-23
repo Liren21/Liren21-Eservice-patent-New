@@ -5,7 +5,6 @@ $lBorder: 12px;
   margin: 10rem 0;
 
 
-
   .form-control, .css-yk16xz-control, .css-2b097c-container:hover,
   .css-1pahdxg-control:hover, .css-2b097c-container,
   .css-yk16xz-control:hover, .css-1laaa021-allyText:hover, .nav-pills .nav-link.active, .nav-pills .show > .nav-link,
@@ -33,7 +32,7 @@ textarea {
   min-height: 60px !important;
 }
 
-.react-datepicker,.modal-content {
+.react-datepicker, .modal-content {
   border-radius: $hBorder;
 }
 
@@ -42,13 +41,15 @@ textarea {
   border-top-right-radius: 25px;
 }
 
-.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before, .react-datepicker__month-read-view--down-arrow::before, .react-datepicker__month-year-read-view--down-arrow::before{
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before, .react-datepicker__month-read-view--down-arrow::before, .react-datepicker__month-year-read-view--down-arrow::before {
   margin-right: 15px;
 }
+
 .card {
-  border-radius: $hBorder!important;
+  border-radius: $hBorder !important;
 }
 
 .card-body {
   padding: 1.5rem !important;
 }
+
