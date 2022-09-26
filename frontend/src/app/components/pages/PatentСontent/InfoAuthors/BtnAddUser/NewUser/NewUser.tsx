@@ -46,7 +46,8 @@ export default observer(() => {
 
                         />
                         <br/>
-                        <Button onClick={()=>addUser.postAddNew()} style={{float: 'right'}} variant={'outline-primary'}>Найти</Button>
+                        <Button onClick={()=>addUser.postAddNew()} style={{float: 'right'}} variant={'outline-primary'}><i
+                            className="fa fa-search" aria-hidden="true"/></Button>
                     </Col>
                 </Row>
             </Form>

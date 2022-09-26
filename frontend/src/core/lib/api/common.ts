@@ -40,6 +40,7 @@ export const handlerSuccess = (res: AxiosResponse, handler?: (val: any) => any, 
     }
 }
 
+
 export const handlerError = (error: AxiosError): void => {
     console.error(error)
     new Toaster({ msg: error.message, type: toast.TYPE.ERROR })

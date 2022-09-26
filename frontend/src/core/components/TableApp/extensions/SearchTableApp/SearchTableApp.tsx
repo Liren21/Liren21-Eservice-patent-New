@@ -6,7 +6,7 @@ import { Row } from 'react-bootstrap'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import { InjectedSearchProps } from 'react-bootstrap-table2-toolkit'
-import AddApp from "../../../../../app/components/pages/AddApp /AddApp";
+import AddApp from "../../../../../app/components/pages/AddApp /AddPatent";
 
 export const SearchTableApp = (props: InjectedSearchProps): JSX.Element => {
     let input

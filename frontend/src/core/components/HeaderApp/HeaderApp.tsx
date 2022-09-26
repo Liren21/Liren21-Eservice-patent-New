@@ -19,7 +19,7 @@ const HeaderApp = observer(() => {
         <div className={'header-app'}>
             <Navbar expand={'sm'}>
                 <Navbar.Brand className={'title'} href={coreUrls.DOMAIN}>
-                    {headerStore.title} {headerStore.username}
+                    <strong>{headerStore.title} { headerStore.username }</strong>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls={'basic-navbar-nav'} />
                 <Navbar.Collapse className={'justify-content-end'} id={'basic-navbar-nav'}>
@@ -29,11 +29,11 @@ const HeaderApp = observer(() => {
                                 <i className={'fa fa-quora'} title={'Легенда'} /> Легенда
                             </Nav.Link>
                         ) : null}
-                        <Nav.Link href={'/'}>
+                        <Nav.Link style={{color:'#fff'}} href={'/'}>
                             <i className={'fa fa-star'} title={'Все сервисы'} /> Все сервисы
                         </Nav.Link>
                         {headerStore.isAuthorized ? (
-                            <Nav.Link href={coreUrls.LOGOUT}>
+                            <Nav.Link  style={{color:'#fff'}} href={coreUrls.LOGOUT}>
                                 <i className={'fa fa-power-off'} title={'Выход'} /> Выход
                             </Nav.Link>
                         ) : (

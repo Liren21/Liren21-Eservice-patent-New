@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, {useState} from 'react'
 
 import {observer} from 'mobx-react-lite'
 import {Button, Card, Form, Row} from "react-bootstrap";
@@ -9,12 +9,12 @@ import ridStore from "../../../../lib/store/rid-store";
 import abstractStore from "../../../../lib/store/abstract-store";
 
 
-
 export default observer(() => {
 
-    const [pcType, setPcType] = useState('')
-    const [language, setLanguage] = useState(pagesStore.patentContent['language'])
-    const [OS, setOS] =  useState(pagesStore.patentContent['OS'])
+    // const [pcType, setPcType] = useState('')
+    // const [language, setLanguage] = useState(pagesStore.patentContent['language'])
+    // const [OS, setOS] = useState(pagesStore.patentContent['OS'])
+    const [status, setStatus] = useState(true)
 
     // const [size, setSize] = useState()
     // const [OS, setOS] = useState()
@@ -27,30 +27,51 @@ export default observer(() => {
     //     isCreator: row.isCreator,
     //
     // }
+    const changeStatus = (val) => {
+        setStatus(!val)
+    }
+    const changeSaveInfo = (val) => {
+        setStatus(true)
+        ridStore.PostUpdInfoRid()
+    }
     return (
         <>
             <Card>
                 <Card.Body>
-                    <Card.Title><strong> <i className="fa fa-info-circle" aria-hidden="true"/> Сведения для
-                        реферата</strong>
-                        <Button
-                            onClick={() => ridStore.PostUpdInfoRid()}
-                            variant={'outline-primary'}
-                            style={{float: "right"}}><i
-                            className="fa fa-pencil" aria-hidden="true"/>Редактировать</Button></Card.Title>
+                    <Card.Title>
+                        <strong>
+                            <i className="fa fa-info-circle" aria-hidden="true"/> Сведения для реферата
+                            {
+                                status
+                                    ?
+                                    <Button
+                                        onClick={changeStatus}
+                                        variant={'primary'}
+                                        style={{float: "right"}}><i
+                                        className="fa fa-pencil" aria-hidden="true"/></Button> :
+                                    <Button
+                                        onClick={changeSaveInfo}
+                                        variant={'success'}
+                                        style={{float: "right"}}><i
+                                        className="fa fa-save" aria-hidden="true"/></Button>
+                            }
+                        </strong>
+                    </Card.Title>
                     <br/><br/>
                     <Card.Text>
                         <Form>
                             <Row>
                                 <FormControlApp
+                                    disabled={status}
                                     classes={'pcType'}
                                     id={'pcType'}
                                     label={'Тип ЭВМ'}
                                     value={abstractStore.pcType}
-                                    onChange={(val)=>abstractStore.setPcType(val)}
+                                    onChange={(val) => abstractStore.setPcType(val)}
                                 />
                                 <br/>
                                 <FormControlApp
+                                    disabled={status}
                                     classes={'home-from-control'}
                                     id={'objType'}
                                     label={'Вид объекта'}
@@ -61,6 +82,7 @@ export default observer(() => {
                                 <br/>
 
                                 <FormControlApp
+                                    disabled={status}
                                     style={{width: '100%'}}
                                     classes={'home-from-control'}
                                     id={'createDate'}
@@ -72,6 +94,7 @@ export default observer(() => {
                                 />
                                 <br/>
                                 <FormControlApp
+                                    disabled={status}
                                     classes={'home-from-control'}
                                     id={'owner'}
                                     label={'Аннотация'}
@@ -81,6 +104,7 @@ export default observer(() => {
                                 />
                                 <br/>
                                 <FormControlApp
+                                    disabled={status}
                                     classes={'home-from-control'}
                                     id={'addressDemand'}
                                     label={'Адрес заявителя'}

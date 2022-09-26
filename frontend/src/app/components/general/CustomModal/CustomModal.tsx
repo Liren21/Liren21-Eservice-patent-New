@@ -16,7 +16,7 @@ export default observer(() => {
     return (
         <div className={'custom-modal'}>
             <Button variant="outline-primary" onClick={handleShow}>
-                <i className="fa fa-user-plus" aria-hidden="true"/>Добавить автора
+                <i className="fa fa-user-plus" aria-hidden="true"/>
             </Button>
 
             <Modal  show={show} onHide={handleClose}>

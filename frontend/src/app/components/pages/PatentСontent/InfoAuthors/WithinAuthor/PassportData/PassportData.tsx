@@ -99,11 +99,12 @@ export default observer(({row}: IPassportData) => {
                                     </Row>
                                     <br/>
                                 </Form>
-                                <Button
-                                    onClick={() => addUser.UpdateAuthorPassport(dataPassport)}
-                                    style={{float: "right"}}>Сохранить</Button>
                             </Card.Body>
                         </Card>
+                        <br/>
+                        <Button
+                            onClick={() => addUser.UpdateAuthorPassport(dataPassport)}
+                            style={{float: "right"}}>Сохранить</Button>
                     </div>
                 </Col>
             </Row>

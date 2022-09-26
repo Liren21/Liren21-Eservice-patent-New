@@ -231,7 +231,6 @@ export default {
 
 
     },
-
     async UpdateAuthorPassport(dataPassport) {
         appStore.setLoading(true)
 
@@ -294,7 +293,7 @@ export default {
             department: dataJob.department,
             series: '',
             number: '',
-            whoGave:'',
+            whoGave: '',
             date: '',
             citizenship: '',
             contribution: '',
@@ -306,6 +305,42 @@ export default {
 
         await axios
             .post(urls.UPD_AUTHORS_JOB, data,)
+            .then((res) =>
+                handlerSuccess(res, (data) => {
+                    data
+                }),
+            )
+            .catch(handlerError)
+            .then(() => appStore.setLoading(false))
+
+
+    },
+    async postUpdateAuthorJob(name, creationDate, typeFile) {
+        appStore.setLoading(true)
+
+
+        const data = {
+            id: 0,
+            objType: typeFile,
+            name: name,
+            owner: '',
+            createDate: creationDate,
+            pcType: '',
+            language: '',
+            annotation: '',
+            OS: '',
+            size: 0,
+            addressDemand: '',
+            status: 0,
+            authors: null,
+            existAuths: null,
+            createAppDate: creationDate,
+            comment: ''
+        }
+
+
+        await axios
+            .post(urls.CREATE_APP, data,)
             .then((res) =>
                 handlerSuccess(res, (data) => {
                     data

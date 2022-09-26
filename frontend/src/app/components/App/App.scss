@@ -1,6 +1,8 @@
 $hBorder: 25px;
 $mBorder: 15px;
 $lBorder: 12px;
+
+
 .app {
   margin: 10rem 0;
 
@@ -12,6 +14,7 @@ $lBorder: 12px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: $mBorder;
     padding: 5px;
+
   }
 
   .form-control, .css-yk16xz-control, .css-2b097c-container:hover,
@@ -56,13 +59,17 @@ textarea {
 
 .card {
   border-radius: $hBorder !important;
+  //box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  //transform: translateY(-5px);
+
+  border: none;
 }
 
 .card-body {
   padding: 1.5rem !important;
 }
+
 a:hover {
   border-radius: $mBorder;
-  background: rgba(0, 0, 0, 0.11);
-
+  background: rgba(0, 0, 0, 0.08);
 }

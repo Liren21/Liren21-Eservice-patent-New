@@ -56,11 +56,12 @@ export default observer(({row}: IJobData) => {
                                     </Row>
                                 </Form>
                                 <br/>
-                                <Button
-                                    onClick={() => addUser.UpdateAuthorJob(dataJob)}
-                                    style={{float: "right"}}>Сохранить</Button>
                             </Card.Body>
                         </Card>
+                        <br/>
+                        <Button
+                            onClick={() => addUser.UpdateAuthorJob(dataJob)}
+                            style={{float: "right"}}>Сохранить</Button>
                     </div>
                 </Col>
             </Row>

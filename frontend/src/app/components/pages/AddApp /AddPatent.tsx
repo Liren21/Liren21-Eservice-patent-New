@@ -3,8 +3,9 @@ import React, {useState} from 'react'
 import {observer} from 'mobx-react-lite'
 import {Button, Form, Modal, Row,} from "react-bootstrap";
 import FormControlApp from "../../../../core/components/FormControlApp/FormControlApp";
-import ridStore from "../../../lib/store/rid-store";
-import pagesStore from "../../../lib/store/pages-store";
+import './AddPatent.scss'
+
+import addPatentStore from "../../../lib/store/addPatent-store";
 
 
 
@@ -38,32 +39,38 @@ export default observer(() => {
                         <Row>
                             <FormControlApp
                                 classes={'home-from-control'}
-                                id={'name'}
-                                label={'Название объекта'}
-                                value={ridStore.name.length ? ridStore.name : pagesStore.patentContent['name']}
-                                onChange={(val) => ridStore.setName(val)}
-                                placeholder={pagesStore.patentContent['name']}
+                                id={'Name'}
+                                label={'Название'}
+                                value={addPatentStore.name}
+                                onChange={(val) => addPatentStore.setName(val)}
+                                placeholder={'Название'}
                             />
                             <br/>
                             <FormControlApp
                                 classes={'home-from-control'}
-                                id={'objType'}
-                                label={'Вид объекта'}
-                                value={ridStore.objType.length ? ridStore.objType : pagesStore.patentContent['objType']}
-                                onChange={(val) => ridStore.setObjType(val)}
-                                placeholder={pagesStore.patentContent['objType']}
+                                id={'type'}
+                                label={'Тип'}
+                                value={addPatentStore.typeFile}
+                                onChange={(val) => addPatentStore.setType(val)}
+                                placeholder={'Тип'}
+                                as={'select'}
+                                selectProps={{
+                                    valueField: 'value',
+                                    textField: 'description',
+                                    options: addPatentStore.typesFile
+                                }
+                                }
                             />
                             <br/>
 
                             <FormControlApp
                                 style={{width: '100%'}}
                                 classes={'home-from-control'}
-                                id={'createDate'}
+                                id={'creationDate'}
                                 type={'date'}
-                                label={'Дата создания'}
-                                value={ridStore.createDate}
-                                onChange={(val) => ridStore.setCreateDate(val)}
-                                placeholder={pagesStore.patentContent['createDate']}
+                                label={'Дата создания '}
+                                value={addPatentStore.creationDate}
+                                onChange={(val) => addPatentStore.setCreationDate(val)}
                             />
 
                         </Row>
@@ -73,7 +80,7 @@ export default observer(() => {
                     <Button variant="secondary" onClick={handleClose}>
                         Закрыть
                     </Button>
-                    <Button variant="primary">Отправить</Button>
+                    <Button onClick={()=>addPatentStore.AddPatent()} variant="primary">Отправить</Button>
                 </Modal.Footer>
             </Modal>
         </>

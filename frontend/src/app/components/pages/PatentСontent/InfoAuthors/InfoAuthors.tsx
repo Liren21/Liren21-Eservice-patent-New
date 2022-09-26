@@ -18,6 +18,7 @@ export default observer(() => {
                     <br/><br/>
                     <Card.Text>
                         <TableApp
+                            hasSearch={false}
                             id={'authorsOutputTable'}
                             data={pagesStore.authors}
                             columns={columns()}

@@ -153,11 +153,12 @@ export default observer(({ row}: IPersonalData) => {
                                     </Row>
                                     <br/>
                                 </Form>
-                                <Button
-                                    onClick={() => addUser.UpdateAuthorPersonal(dataPerson)}
-                                    style={{float: "right"}}>Сохранить</Button>
                             </Card.Body>
                         </Card>
+                        <br/>
+                        <Button
+                            onClick={() => addUser.UpdateAuthorPersonal(dataPerson)}
+                            style={{float: "right"}}>Сохранить</Button>
                     </div>
                 </Col>
             </Row>

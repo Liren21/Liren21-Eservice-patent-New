@@ -75,7 +75,7 @@ export default observer(() => {
                         <br/>
                         <Button onClick={() => addUser.postAddExisting()} style={{float: 'right'}}
                                 variant={'outline-primary'}><i
-                            className="fa fa-search" aria-hidden="true"/> Найти</Button>
+                            className="fa fa-search" aria-hidden="true"/> </Button>
                     </Col>
                 </Row>
             </Form>
