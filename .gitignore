@@ -9,4 +9,7 @@ frontend.iml
 package-lock.json
 proxy.cert
 proxy.key
+project
+tmp
+target
 
