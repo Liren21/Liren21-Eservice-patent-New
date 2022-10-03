@@ -1,16 +1,9 @@
 import React, {useState} from 'react'
-
 import {observer} from 'mobx-react-lite'
 import {Button, Form, Modal, Row,} from "react-bootstrap";
 import FormControlApp from "../../../../core/components/FormControlApp/FormControlApp";
 import './AddPatent.scss'
-
 import addPatentStore from "../../../lib/store/addPatent-store";
-
-
-
-
-
 
 
 export default observer(() => {
@@ -21,7 +14,7 @@ export default observer(() => {
 
     return (
         <>
-            <Button variant="outline-primary"  onClick={handleShow}>
+            <Button variant="outline-primary" onClick={handleShow}>
                 <i className="fa fa-user-plus" aria-hidden="true"/>
             </Button>
 
@@ -80,7 +73,7 @@ export default observer(() => {
                     <Button variant="secondary" onClick={handleClose}>
                         Закрыть
                     </Button>
-                    <Button onClick={()=>addPatentStore.AddPatent()} variant="primary">Отправить</Button>
+                    <Button onClick={() => addPatentStore.AddPatent()} variant="primary">Отправить</Button>
                 </Modal.Footer>
             </Modal>
         </>

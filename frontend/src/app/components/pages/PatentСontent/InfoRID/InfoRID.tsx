@@ -13,11 +13,11 @@ export default observer(() => {
     const [status, setStatus] = useState(true)
     const changeStatus = (val) => {
         setStatus(!val)
-        new Toaster({ msg: 'Операция выполнена успешно', type: toast.TYPE.INFO })
+        new Toaster({ msg: 'Измените информацию', type: toast.TYPE.WARNING })
     }
     const changeSaveInfo = () => {
         setStatus(true)
-        ridStore.PostUpdInfoRid()
+        ridStore.PostUpdRid()
     }
 
         return (

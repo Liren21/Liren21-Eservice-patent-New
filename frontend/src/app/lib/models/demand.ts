@@ -7,6 +7,7 @@ export interface IDemand extends IGlobal {
     id?: string
     objType?: string
     name?: string
+    surname?: string
     owner?: string
     createDate?: string
     pcType?: string
@@ -28,6 +29,7 @@ export default class Demand extends Global<IDemand, Demand> implements IDemand {
     id?: string
     objType?: string
     name?: string
+    surname?: string
     owner?: string
     createDate?: string
     pcType?: string

@@ -70,14 +70,14 @@ class AddUser implements IAddUser {
 
 
     postAddExisting() {
-        services.searchUser(this.existingName, this.existingSurname, this.existingLastname, this.existingBirthday)
+        services.postSearchUser(this.existingName, this.existingSurname, this.existingLastname, this.existingBirthday)
             .then(() => {
             })
             .catch(handlerError)
     }
 
     postAddNew() {
-        services.addNewUser(this.newName, this.newSurname, this.newLastname)
+        services.postAddNewUser(this.newName, this.newSurname, this.newLastname)
             .then(() => {
             })
             .catch(handlerError)
@@ -85,7 +85,7 @@ class AddUser implements IAddUser {
 
     postAddEx() {
         // @ts-ignore
-        services.AddExAuthor( this.foundAuthor[0]['id'],this.foundAuthor[0]['peopleId'])
+        services.postAddExAuthor( this.foundAuthor[0]['id'],this.foundAuthor[0]['peopleId'])
             .then(() => {
 
             })
@@ -93,7 +93,7 @@ class AddUser implements IAddUser {
     }
     UpdateAuthorPersonal(dataPerson) {
         // @ts-ignore
-        services.UpdateAuthorPersonalInfo(dataPerson)
+        services.postUpdateAuthorPersonalInfo(dataPerson)
             .then(() => {
 
             })
@@ -101,7 +101,7 @@ class AddUser implements IAddUser {
     }
     UpdateAuthorPassport(dataPassport) {
         // @ts-ignore
-        services.UpdateAuthorPassport(dataPassport)
+        services.postUpdateAuthorPassport(dataPassport)
             .then(() => {
 
             })
@@ -109,7 +109,7 @@ class AddUser implements IAddUser {
     }
     UpdateAuthorJob(dataJob) {
         // @ts-ignore
-        services.UpdateAuthorJob(dataJob)
+        services.postUpdateAuthorJob(dataJob)
             .then(() => {
 
             })

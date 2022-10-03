@@ -48,7 +48,7 @@ export default {
 
         return result
     },
-    async UpdInfoRid(name, addressDemand, objType, owner, createDate): Promise<Demand> {
+    async postUpdInfoRid(name, addressDemand, objType, owner, createDate): Promise<Demand> {
         appStore.setLoading(true)
         let result: Demand
 
@@ -85,7 +85,7 @@ export default {
 
         return result
     },
-    async searchUser(newName, newSurname, newLastname, newBirthday) {
+    async postSearchUser(newName, newSurname, newLastname, newBirthday) {
         appStore.setLoading(true)
         const data = {
             id: 0,
@@ -124,7 +124,7 @@ export default {
 
 
     },
-    async addNewUser(newName, newSurname, newLastname,): Promise<Authors> {
+    async postAddNewUser(newName, newSurname, newLastname,): Promise<Authors> {
         appStore.setLoading(true)
         let result: Authors
 
@@ -164,7 +164,7 @@ export default {
 
         return result
     },
-    async AddExAuthor(id, peopleId) {
+    async postAddExAuthor(id, peopleId) {
         appStore.setLoading(true)
 
 
@@ -189,7 +189,7 @@ export default {
 
 
     },
-    async UpdateAuthorPersonalInfo(dataPerson) {
+    async postUpdateAuthorPersonalInfo(dataPerson) {
         appStore.setLoading(true)
 
 
@@ -231,7 +231,7 @@ export default {
 
 
     },
-    async UpdateAuthorPassport(dataPassport) {
+    async postUpdateAuthorPassport(dataPassport) {
         appStore.setLoading(true)
 
 
@@ -273,7 +273,7 @@ export default {
 
 
     },
-    async UpdateAuthorJob(dataJob) {
+    async postUpdateAuthorJob(dataJob) {
         appStore.setLoading(true)
 
 
@@ -315,7 +315,7 @@ export default {
 
 
     },
-    async postUpdateAuthorJob(name, creationDate, typeFile) {
+    async postCreateApp(name, creationDate, typeFile) {
         appStore.setLoading(true)
 
 
@@ -341,6 +341,43 @@ export default {
 
         await axios
             .post(urls.CREATE_APP, data,)
+            .then((res) =>
+                handlerSuccess(res, (data) => {
+                    data
+                }),
+            )
+            .catch(handlerError)
+            .then(() => appStore.setLoading(false))
+
+
+    },
+    async postUpdDateRef(pcType, language, OS, annotation, size) {
+        appStore.setLoading(true)
+
+
+        const data = {
+            id: pagesStore.patentContent['id'],
+            objType: '',
+            name: '',
+            owner: '',
+            createDate: '',
+            pcType: pcType,
+            language: language,
+            annotation: annotation,
+            OS: OS,
+            size: size,
+            addressDemand: '',
+            status: pagesStore.patentContent['status'],
+            authors: null,
+            existAuths: null,
+            createAppDate:'',
+            comment: ''
+        }
+        console.log(data.status)
+
+
+        await axios
+            .post(urls.UPD_DATE_REF, data,)
             .then((res) =>
                 handlerSuccess(res, (data) => {
                     data

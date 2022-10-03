@@ -6,6 +6,7 @@ import {Button, Col, Nav, Row, Tab} from "react-bootstrap";
 import InfoRID from "./InfoRID/InfoRID";
 import InfoAuthors from "./InfoAuthors/InfoAuthors";
 import InfoAbstract from "./InfoAbstract/InfoAbstract";
+import LinkDoc from "./LinkDoc/LinkDoc";
 
 
 
@@ -35,7 +36,7 @@ export default observer(() => {
                                     для реферата</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="4"> Ссылки на документы</Nav.Link>
+                                <Nav.Link eventKey="4"><i className="fa fa-file-text" aria-hidden="true"/> Ссылки на документы</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="5"> Статусы </Nav.Link>
@@ -58,6 +59,9 @@ export default observer(() => {
                             </Tab.Pane>
                             <Tab.Pane eventKey="3">
                                 <InfoAbstract/>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="4">
+                               <LinkDoc/>
                             </Tab.Pane>
                         </Tab.Content>
                     </Col>

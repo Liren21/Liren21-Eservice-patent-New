@@ -16,19 +16,24 @@ export default (): any => {
 
     const iconRoutine = (cell) => {
         let icon = 'fa fa-pencil'
+        let title = 'Статус "Черновик"'
 
         switch (cell) {
             case 0:
                 icon = 'fa fa-pencil-square-o'
+                title = 'Статус "Ожидает проверки"'
                 break
             case 1:
                 icon = 'fa fa-check'
+                title = 'Статус "Ожидает проверки"'
                 break
             case 2:
                 icon = 'fa fa-pencil-square-o'
+                title = 'Статус "Ожидает проверки"'
                 break
             case 3:
                 icon = 'fa fa-lock'
+                title = 'Статус "Ожидает проверки"'
                 break
         }
 
@@ -37,7 +42,6 @@ export default (): any => {
 
     const insideLink = (cell, row) => {
 
-        console.log(1)
         return (
 
             <Link style={{textDecoration: 'none'}} to={`${routes.PATENT_CONTENT}/${row.id}`}

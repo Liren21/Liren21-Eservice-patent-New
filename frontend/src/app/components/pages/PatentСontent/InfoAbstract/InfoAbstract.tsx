@@ -1,38 +1,28 @@
-import React, {useState} from 'react'
-
+import React, { useState} from 'react'
 import {observer} from 'mobx-react-lite'
 import {Button, Card, Form, Row} from "react-bootstrap";
 import FormControlApp from "../../../../../core/components/FormControlApp/FormControlApp";
 import pagesStore from "../../../../lib/store/pages-store";
-import ridStore from "../../../../lib/store/rid-store";
+
 
 import abstractStore from "../../../../lib/store/abstract-store";
+import Toaster from "../../../../../core/lib/toaster/toaster";
+import {toast} from "react-toastify";
 
 
 export default observer(() => {
 
-    // const [pcType, setPcType] = useState('')
-    // const [language, setLanguage] = useState(pagesStore.patentContent['language'])
-    // const [OS, setOS] = useState(pagesStore.patentContent['OS'])
+
     const [status, setStatus] = useState(true)
 
-    // const [size, setSize] = useState()
-    // const [OS, setOS] = useState()
 
-    // const dataJob = {
-    //     work: work,
-    //     position: position,
-    //     department: department,
-    //     isLeader: row.isLeader,
-    //     isCreator: row.isCreator,
-    //
-    // }
     const changeStatus = (val) => {
         setStatus(!val)
+        new Toaster({msg: 'Измените информацию', type: toast.TYPE.INFO})
     }
-    const changeSaveInfo = (val) => {
+    const changeSaveInfo = () => {
+        abstractStore.PostUpdDateRef()
         setStatus(true)
-        ridStore.PostUpdInfoRid()
     }
     return (
         <>
@@ -66,51 +56,47 @@ export default observer(() => {
                                     classes={'pcType'}
                                     id={'pcType'}
                                     label={'Тип ЭВМ'}
-                                    value={abstractStore.pcType}
+                                    value={abstractStore.pcType.length ? abstractStore.pcType : pagesStore.patentContent['pcType']}
                                     onChange={(val) => abstractStore.setPcType(val)}
                                 />
                                 <br/>
                                 <FormControlApp
                                     disabled={status}
                                     classes={'home-from-control'}
-                                    id={'objType'}
-                                    label={'Вид объекта'}
-                                    value={ridStore.objType.length ? ridStore.objType : pagesStore.patentContent['objType']}
-                                    onChange={(val) => ridStore.setObjType(val)}
-                                    placeholder={pagesStore.patentContent['objType']}
-                                />
-                                <br/>
+                                    id={'language'}
+                                    label={'Язык'}
+                                    value={abstractStore.language.length ? abstractStore.language : pagesStore.patentContent['language']}
+                                    onChange={(val) => abstractStore.setLanguage(val)}
 
-                                <FormControlApp
-                                    disabled={status}
-                                    style={{width: '100%'}}
-                                    classes={'home-from-control'}
-                                    id={'createDate'}
-                                    type={'date'}
-                                    label={'Дата создания'}
-                                    value={ridStore.createDate}
-                                    onChange={(val) => ridStore.setCreateDate(val)}
-                                    placeholder={pagesStore.patentContent['createDate']}
                                 />
                                 <br/>
                                 <FormControlApp
                                     disabled={status}
                                     classes={'home-from-control'}
-                                    id={'owner'}
-                                    label={'Аннотация'}
-                                    value={ridStore.owner}
-                                    onChange={(val) => ridStore.setOwner(val)}
+                                    id={'size'}
+                                    label={'Объем программы'}
+                                    value={abstractStore.size.length ? abstractStore.size : pagesStore.patentContent['size']}
+                                    onChange={(val) => abstractStore.setSize(val)}
+
+                                />
+                                <br/>
+                                <FormControlApp
+                                    disabled={status}
+                                    classes={'home-from-control'}
+                                    id={'OS'}
+                                    label={'Операционная система\n'}
+                                    value={abstractStore.OS.length ? abstractStore.OS : pagesStore.patentContent['OS']}
+                                    onChange={(val) => abstractStore.setOS(val)}
+                                />
+                                <br/>
+                                <FormControlApp
+                                    disabled={status}
+                                    classes={'home-from-control'}
+                                    id={'annotation'}
+                                    label={'Анотации'}
+                                    value={abstractStore.annotation.length ? abstractStore.annotation : pagesStore.patentContent['annotation']}
+                                    onChange={(val) => abstractStore.setAnnotation(val)}
                                     as={'textarea'}
-                                />
-                                <br/>
-                                <FormControlApp
-                                    disabled={status}
-                                    classes={'home-from-control'}
-                                    id={'addressDemand'}
-                                    label={'Адрес заявителя'}
-                                    value={ridStore.addressDemand}
-                                    onChange={(val) => ridStore.setAddressDemand(val)}
-                                    placeholder={pagesStore.patentContent['addressDemand'] == '' ? pagesStore.patentContent['addressDemand'] : "Адрес заявителя"}
                                 />
                             </Row>
                         </Form>

@@ -8,11 +8,11 @@ import './toaster.scss'
 /**
  * Toaster
  * Pool up messenger of app.
- * Dont set this file!!!
+ * Don't set this file!!!
  */
 const fade = cssTransition({
-    enter: 'animate__fadeInDown',
-    exit: 'animate__fadeOutUp',
+    enter: 'animate__fadeInRight',
+    exit: 'animate__fadeOutRight',
 })
 
 const msgs = []

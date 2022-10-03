@@ -43,7 +43,7 @@ class PagesStore implements IPagesStore {
     }
 
     AddPatent() {
-        services.postUpdateAuthorJob(this.name,this.creationDate,this.typeFile.label)
+        services.postCreateApp(this.name,this.creationDate,this.typeFile.label)
             .then(() => {
             })
             .catch(handlerError)

@@ -42,8 +42,8 @@ class RidStore implements IRidStore {
         this.addressDemand = val
     }
 
-    PostUpdInfoRid() {
-        services.UpdInfoRid(this.name, this.addressDemand, this.objType, this.owner, this.createDate)
+    PostUpdRid() {
+        services.postUpdInfoRid(this.name, this.addressDemand, this.objType, this.owner, this.createDate)
             .then((res) => res)
             .catch(handlerError)
 

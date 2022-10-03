@@ -783,7 +783,7 @@ object AppController {
 
     SparkAPI.get("/loadAuthors", loadAuthors)
     SparkAPI.post("/loadDataBase", "application/json", loadDataBase)
-    SparkAPI.get("/document", document)
+    SparkAPI.get("/document.docx", document)
     SparkAPI.get("/documentRev.docx", documentRev)
     SparkAPI.get("/report.docx", report)
     SparkAPI.get("/documentDop.docx", documentDop)
