@@ -4,7 +4,7 @@
 		module="eservice-patent$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20220930095834"
+		publication="20221003161319"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

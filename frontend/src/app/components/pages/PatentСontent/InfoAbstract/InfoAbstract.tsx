@@ -75,7 +75,7 @@ export default observer(() => {
                                     classes={'home-from-control'}
                                     id={'size'}
                                     label={'Объем программы'}
-                                    value={abstractStore.size.length ? abstractStore.size : pagesStore.patentContent['size']}
+                                    value={abstractStore.size ? abstractStore.size : pagesStore.patentContent['size']}
                                     onChange={(val) => abstractStore.setSize(val)}
 
                                 />
