@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, {useState} from 'react'
 import {observer} from 'mobx-react-lite'
 import {Button, Card, Form, Row} from "react-bootstrap";
 import FormControlApp from "../../../../../core/components/FormControlApp/FormControlApp";
@@ -12,8 +12,9 @@ import {toast} from "react-toastify";
 
 export default observer(() => {
 
-
+    console.log(abstractStore.annotation.length)
     const [status, setStatus] = useState(true)
+    const [height, setHeight] = useState(500)
 
 
     const changeStatus = (val) => {
@@ -36,7 +37,7 @@ export default observer(() => {
                                     ?
                                     <Button
                                         onClick={changeStatus}
-                                        variant={'primary'}
+                                        variant={'outline-primary'}
                                         style={{float: "right"}}><i
                                         className="fa fa-pencil" aria-hidden="true"/></Button> :
                                     <Button
@@ -90,6 +91,7 @@ export default observer(() => {
                                 />
                                 <br/>
                                 <FormControlApp
+                                    style={{height:`${height}`}}
                                     disabled={status}
                                     classes={'home-from-control'}
                                     id={'annotation'}

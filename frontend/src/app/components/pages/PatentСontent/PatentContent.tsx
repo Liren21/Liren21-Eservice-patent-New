@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import {observer} from 'mobx-react-lite'
 import './PatentСontent.scss'
@@ -7,15 +7,16 @@ import InfoRID from "./InfoRID/InfoRID";
 import InfoAuthors from "./InfoAuthors/InfoAuthors";
 import InfoAbstract from "./InfoAbstract/InfoAbstract";
 import LinkDoc from "./LinkDoc/LinkDoc";
-
-
-
-
+import routes from "../../../lib/routes";
+import pagesStore from "../../../lib/store/pages-store";
 
 
 export default observer(() => {
 
-
+    useEffect(() => {
+        `${routes.PATENT_CONTENT}/${pagesStore.patentContent['id']}`
+        console.log(pagesStore.idPatent)
+    })
     return (
         <>
             <Tab.Container id="left-tabs-example" defaultActiveKey="1">
@@ -36,7 +37,8 @@ export default observer(() => {
                                     для реферата</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="4"><i className="fa fa-file-text" aria-hidden="true"/> Ссылки на документы</Nav.Link>
+                                <Nav.Link eventKey="4"><i className="fa fa-file-text" aria-hidden="true"/> Ссылки на
+                                    документы</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="5"> Статусы </Nav.Link>
@@ -61,7 +63,7 @@ export default observer(() => {
                                 <InfoAbstract/>
                             </Tab.Pane>
                             <Tab.Pane eventKey="4">
-                               <LinkDoc/>
+                                <LinkDoc/>
                             </Tab.Pane>
                         </Tab.Content>
                     </Col>

@@ -370,7 +370,7 @@ export default {
             status: pagesStore.patentContent['status'],
             authors: null,
             existAuths: null,
-            createAppDate:'',
+            createAppDate: '',
             comment: ''
         }
         console.log(data.status)
