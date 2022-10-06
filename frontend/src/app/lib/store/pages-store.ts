@@ -15,6 +15,7 @@ interface IPagesStore {
     demand: Demand[]
     authors: Demand[]
     idPatent: number
+    rofl: Demand[]
 
 }
 
@@ -27,6 +28,7 @@ class PagesStore implements IPagesStore {
     creator = ''
     typeFile = null
     idPatent = null
+    rofl:Demand[] = []
     typesFile = [
         new TypesPatent({value: 0, description: 'Программа для ЭВМ'}),
         new TypesPatent({value: 1, description: 'База данных'})
@@ -58,6 +60,9 @@ class PagesStore implements IPagesStore {
 
     setIdPatent(val: number) {
         this.idPatent = val
+    }
+    setRofl(val: Demand[]) {
+        this.rofl = val
     }
 
     setDemand(val: Demand[]) {
