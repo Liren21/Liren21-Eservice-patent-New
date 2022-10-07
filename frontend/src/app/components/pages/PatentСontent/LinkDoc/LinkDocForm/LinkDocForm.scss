@@ -1,0 +1,15 @@
+.link-doc-form {
+  margin-bottom: .8rem;
+
+  .col-name {
+    text-align: left;
+    vertical-align: top;
+    font-size: 1.2rem;
+    display: inline-block;
+  }
+}
+
+.link-doc-form:hover {
+  background: rgb(233, 236, 239);
+  border-radius: 12px;
+}

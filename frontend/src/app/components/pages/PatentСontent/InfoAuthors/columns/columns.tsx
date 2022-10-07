@@ -3,7 +3,6 @@ import DataUser from "../WithinAuthor/WithinAuthor ";
 import authorsStore from "../../../../../lib/store/authors-store";
 
 
-
 export default (): any => {
 
     const formatterIcons = (cell) => {
@@ -31,11 +30,9 @@ export default (): any => {
 
         return <i className={icon} title={title}/>
     }
-    const contentUser = (cell,row) => {
-        console.log(66666666666666666666)
+    const contentUser = (cell, row) => {
         authorsStore.setAuthorsData(row)
-      return <DataUser row={row} cell={cell}/>
-        // authorsStore.setSurName()
+        return <DataUser row={row} cell={cell}/>
     }
 
 

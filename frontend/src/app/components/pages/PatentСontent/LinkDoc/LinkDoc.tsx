@@ -1,17 +1,15 @@
-import React, { useState} from 'react'
+import React from 'react'
 import {observer} from 'mobx-react-lite'
 import {Card, Form, Row} from "react-bootstrap";
-import pagesStore from "../../../../lib/store/pages-store";
 import './LinkDoc.scss'
-import LinkDocForm from "./LinkDocForm/LinkDocForm";
-import {application, dataLink} from "./Data/Data";
+import DocLink from "./DocFactory/DocLink";
+import DocAdditStatement from "./DocFactory/DocAdditStatement";
+import DocApplication from "./DocFactory/DocApplication";
+import DocAppReverse from "./DocFactory/DocAppReverse";
+import DocAdditStatementRev from "./DocFactory/DocAdditStatementRev";
 
 
 export default observer(() => {
-    const [count, setCount] = useState(0)
-    const changeSetCount = () => {
-        setCount(count + 1)
-    }
 
     return (
         <>
@@ -25,37 +23,11 @@ export default observer(() => {
                 <Card.Text>
                     <Form>
                         <Row>
-                            {
-                                dataLink.map((d) => (
-                                    <>
-                                        {
-                                            d.title ?
-                                                <LinkDocForm title={d.title}
-                                                             url={d.link + pagesStore.patentContent['id']}/>
-                                                :
-                                                null
-                                        }
-                                    </>
-                                ))
-                            }
-                            {
-                                application.map((d, k) => (
-                                    <>
-
-                                        {
-                                            pagesStore.authors.map((data) => (
-                                              <>
-
-                                                  <LinkDocForm title={d.title + ' ' + data.surname}
-                                                               url={d.link + `${count}&appid=${pagesStore.patentContent['id']}`}/>
-
-                                              </>
-                                            ))
-                                        }
-
-                                    </>
-                                ))
-                            }
+                            <DocLink/>
+                            <DocAdditStatement/>
+                            <DocAdditStatementRev/>
+                            <DocApplication/>
+                            <DocAppReverse/>
                         </Row>
                     </Form>
                 </Card.Text>

@@ -4,6 +4,7 @@ import services from "../services/services";
 import {handlerError} from "../../../core/lib/api/common";
 import Demand from "../models/demand";
 import abstractStore from "./abstract-store";
+import Authors from "../models/authors";
 
 
 interface IPagesStore {
@@ -13,7 +14,7 @@ interface IPagesStore {
     creator: string
     typesFile: TypesPatent[]
     demand: Demand[]
-    authors: Demand[]
+    authors: Authors[]
     idPatent: number
     rofl: Demand[]
 
@@ -22,7 +23,7 @@ interface IPagesStore {
 class PagesStore implements IPagesStore {
     demand: Demand[] = []
     patentContent: Demand[] = []
-    authors: Demand[] = []
+    authors: Authors[] = []
     name = ''
     creationDate = ''
     creator = ''
@@ -54,7 +55,7 @@ class PagesStore implements IPagesStore {
         this.creator = val
     }
 
-    setAuthors(val: Demand[]) {
+    setAuthors(val: Authors[]) {
         this.authors = val
     }
 

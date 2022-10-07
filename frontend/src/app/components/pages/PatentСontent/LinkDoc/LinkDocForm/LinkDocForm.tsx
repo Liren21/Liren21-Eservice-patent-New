@@ -15,20 +15,15 @@ export default observer(({title, url}: ILinkDocForm) => {
 
 
     return (
-        <div>
-            <>
+
+
                 <div
-                    style={{marginBottom: '.8rem',}}
+                    className={'link-doc-form'}
                 >
-                    <Col style={{
-                        textAlign: 'left',
-                        verticalAlign: 'top',
-                        display: 'inline-block',
-                        fontSize: '1.2rem'
-                    }} md={11}>
+                    <Col className={'col-name'} md={11}>
                         {title}
                     </Col>
-                    <Col style={{display: 'inline-block'}} md={1}>
+                    <Col className={'col-name'} md={1}>
                         <Button
                             className={'btn-download-doc'}
                             variant={"outline-primary"}
@@ -40,8 +35,8 @@ export default observer(({title, url}: ILinkDocForm) => {
                     </Col>
                 </div>
 
-            </>
-        </div>
+
+
     )
 })
 

@@ -27,3 +27,15 @@ export const applicationReverse = [
         link: `agreement.docx?id=`,
     },
 ]
+export const anAdditStatement = [
+    {
+        title: 'Дополнительное заявление',
+        link: `documentDop.docx?id=`,
+    },
+]
+export const anAdditStatementReverse = [
+    {
+        title: 'Дополнительное заявление (Обратная сторона)',
+        link: `documentDopRev.docx?id=`,
+    },
+]
