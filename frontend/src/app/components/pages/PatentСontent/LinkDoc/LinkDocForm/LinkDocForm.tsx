@@ -1,13 +1,14 @@
 import React from 'react'
 import {observer} from 'mobx-react-lite'
-import {Button, Col, } from "react-bootstrap";
+import {Button, Col,} from "react-bootstrap";
 import './LinkDocForm.scss'
 import coreUrls from "../../../../../../core/lib/core-urls";
 
 
 interface ILinkDocForm {
     title: string
-    url:string
+    url: string
+
 }
 
 export default observer(({title, url}: ILinkDocForm) => {

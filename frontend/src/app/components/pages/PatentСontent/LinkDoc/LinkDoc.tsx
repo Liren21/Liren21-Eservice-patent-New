@@ -1,16 +1,17 @@
-import React from 'react'
+import React, { useState} from 'react'
 import {observer} from 'mobx-react-lite'
-import { Card, Form, Row} from "react-bootstrap";
+import {Card, Form, Row} from "react-bootstrap";
 import pagesStore from "../../../../lib/store/pages-store";
 import './LinkDoc.scss'
 import LinkDocForm from "./LinkDocForm/LinkDocForm";
-import {dataLink} from "./Data/Data";
+import {application, dataLink} from "./Data/Data";
 
 
 export default observer(() => {
-
-
-    const data = [].concat(dataLink, pagesStore.authors)
+    const [count, setCount] = useState(0)
+    const changeSetCount = () => {
+        setCount(count + 1)
+    }
 
     return (
         <>
@@ -25,14 +26,33 @@ export default observer(() => {
                     <Form>
                         <Row>
                             {
-                                data.map((d) => (
+                                dataLink.map((d) => (
                                     <>
                                         {
                                             d.title ?
-                                                <LinkDocForm title={d.title} url={d.link}/>
+                                                <LinkDocForm title={d.title}
+                                                             url={d.link + pagesStore.patentContent['id']}/>
                                                 :
                                                 null
                                         }
+                                    </>
+                                ))
+                            }
+                            {
+                                application.map((d, k) => (
+                                    <>
+
+                                        {
+                                            pagesStore.authors.map((data) => (
+                                              <>
+
+                                                  <LinkDocForm title={d.title + ' ' + data.surname}
+                                                               url={d.link + `${count}&appid=${pagesStore.patentContent['id']}`}/>
+
+                                              </>
+                                            ))
+                                        }
+
                                     </>
                                 ))
                             }
