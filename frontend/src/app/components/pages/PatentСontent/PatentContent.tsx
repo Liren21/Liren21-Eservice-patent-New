@@ -9,6 +9,7 @@ import InfoAbstract from "./InfoAbstract/InfoAbstract";
 import LinkDoc from "./LinkDoc/LinkDoc";
 import routes from "../../../lib/routes";
 import pagesStore from "../../../lib/store/pages-store";
+import InfoStatus from "./InfoStatus/InfoStatus";
 
 
 export default observer(() => {
@@ -41,7 +42,7 @@ export default observer(() => {
                                     документы</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="5"> Статусы </Nav.Link>
+                                <Nav.Link eventKey="5"><i className="fa fa-cog" aria-hidden="true"/> Статусы </Nav.Link>
                             </Nav.Item>
                             <br/>
                             <br/>
@@ -64,6 +65,9 @@ export default observer(() => {
                             </Tab.Pane>
                             <Tab.Pane eventKey="4">
                                 <LinkDoc/>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="5">
+                                <InfoStatus/>
                             </Tab.Pane>
                         </Tab.Content>
                     </Col>

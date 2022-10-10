@@ -1544,3 +1544,137 @@ java.lang.IndexOutOfBoundsException: 42
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
 	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_342]
 11:47:20.070 [qtp61624801-16] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/agreementInfo.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+16:01:19.593 [Thread-0] INFO  org.eclipse.jetty.util.log           Logging initialized @687ms
+16:01:19.654 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        == Spark has ignited ...
+16:01:19.654 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        >> Listening on 0.0.0.0:4567
+16:01:19.660 [main] INFO  scalikejdbc.config.DBs$              connectionTimeoutMillis is deprecated. Use poolConnectionTimeoutMillis instead.
+16:01:19.671 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
+16:01:19.768 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@6f74ff33{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+16:01:19.768 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @865ms
+17:02:56.989 [Thread-0] INFO  org.eclipse.jetty.util.log           Logging initialized @1407ms
+17:02:57.076 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        == Spark has ignited ...
+17:02:57.077 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        >> Listening on 0.0.0.0:4567
+17:02:57.095 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
+17:02:57.097 [main] INFO  scalikejdbc.config.DBs$              connectionTimeoutMillis is deprecated. Use poolConnectionTimeoutMillis instead.
+17:02:57.233 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@6cecbd8{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+17:02:57.234 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @1664ms
+17:16:51.839 [qtp1312064417-19] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/document.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+17:17:03.427 [qtp1312064417-15] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/documentRev.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+17:17:05.158 [qtp1312064417-18] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/report.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+17:17:06.219 [qtp1312064417-15] ERROR e.o.e.patent.mvc.AppController$      null
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542) ~[na:1.8.0_342]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[na:1.8.0_342]
+	at scala.collection.immutable.StringLike$class.toInt(StringLike.scala:273) ~[scala-library-2.11.11.jar:na]
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:29) ~[scala-library-2.11.11.jar:na]
+	at edu.omsu.eservice.patent.mvc.AppController$.edu$omsu$eservice$patent$mvc$AppController$$documentDop$1(AppController.scala:115) ~[classes/:na]
+	at edu.omsu.eservice.patent.mvc.AppController$$anonfun$main$6.apply(AppController.scala:789) ~[classes/:na]
+	at edu.omsu.eservice.patent.mvc.AppController$$anonfun$main$6.apply(AppController.scala:789) ~[classes/:na]
+	at edu.omsu.eservice.patent.conf.SparkAPI$$anon$1.handle(SparkAPI.scala:42) ~[classes/:na]
+	at spark.RouteImpl$1.handle(RouteImpl.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:128) ~[spark-core-2.5.4.jar:na]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) [spark-core-2.5.4.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_342]
+17:17:06.219 [qtp1312064417-15] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/documentDop.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+17:17:35.694 [qtp1312064417-16] ERROR e.o.e.patent.mvc.AppController$      null
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542) ~[na:1.8.0_342]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[na:1.8.0_342]
+	at scala.collection.immutable.StringLike$class.toInt(StringLike.scala:273) ~[scala-library-2.11.11.jar:na]
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:29) ~[scala-library-2.11.11.jar:na]
+	at edu.omsu.eservice.patent.mvc.AppController$.edu$omsu$eservice$patent$mvc$AppController$$documentDop$1(AppController.scala:115) ~[classes/:na]
+	at edu.omsu.eservice.patent.mvc.AppController$$anonfun$main$6.apply(AppController.scala:789) ~[classes/:na]
+	at edu.omsu.eservice.patent.mvc.AppController$$anonfun$main$6.apply(AppController.scala:789) ~[classes/:na]
+	at edu.omsu.eservice.patent.conf.SparkAPI$$anon$1.handle(SparkAPI.scala:42) ~[classes/:na]
+	at spark.RouteImpl$1.handle(RouteImpl.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:128) ~[spark-core-2.5.4.jar:na]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) [spark-core-2.5.4.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_342]
+17:17:35.698 [qtp1312064417-16] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/documentDop.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+17:17:56.505 [qtp1312064417-19] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/documentDop.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+17:21:01.882 [qtp1312064417-14] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/documentDop.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+18:09:20.264 [Thread-0] INFO  org.eclipse.jetty.util.log           Logging initialized @1600ms
+18:09:20.352 [main] INFO  scalikejdbc.config.DBs$              connectionTimeoutMillis is deprecated. Use poolConnectionTimeoutMillis instead.
+18:09:20.392 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        == Spark has ignited ...
+18:09:20.392 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        >> Listening on 0.0.0.0:4567
+18:09:20.402 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
+18:09:20.517 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@3bd1b059{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+18:09:20.517 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @1859ms
+18:22:23.844 [qtp872918406-15] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/document.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+08:49:12.258 [qtp872918406-15] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/document.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+08:49:13.441 [qtp872918406-16] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/documentRev.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+08:49:14.051 [qtp872918406-15] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/report.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+08:50:22.788 [qtp872918406-14] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/document.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+09:00:43.464 [qtp872918406-17] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/agreementInfo.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+12:59:39.772 [qtp872918406-14] ERROR e.o.e.patent.mvc.AppController$      null
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542) ~[na:1.8.0_342]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[na:1.8.0_342]
+	at scala.collection.immutable.StringLike$class.toInt(StringLike.scala:273) ~[scala-library-2.11.11.jar:na]
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:29) ~[scala-library-2.11.11.jar:na]
+	at edu.omsu.eservice.patent.mvc.AppController$.edu$omsu$eservice$patent$mvc$AppController$$agreement$1(AppController.scala:225) ~[classes/:na]
+	at edu.omsu.eservice.patent.mvc.AppController$$anonfun$main$10.apply(AppController.scala:794) ~[classes/:na]
+	at edu.omsu.eservice.patent.mvc.AppController$$anonfun$main$10.apply(AppController.scala:794) ~[classes/:na]
+	at edu.omsu.eservice.patent.conf.SparkAPI$$anon$1.handle(SparkAPI.scala:42) ~[classes/:na]
+	at spark.RouteImpl$1.handle(RouteImpl.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:128) ~[spark-core-2.5.4.jar:na]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) [spark-core-2.5.4.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) [jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) [jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_342]
+12:59:39.774 [qtp872918406-14] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/agreement.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+13:00:18.011 [qtp872918406-19] INFO  spark.http.matching.MatcherFilter    The requested route [/patent/backend/documentDop.docx] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9]
+08:12:55.500 [Thread-0] INFO  org.eclipse.jetty.util.log           Logging initialized @695ms
+08:12:55.548 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        == Spark has ignited ...
+08:12:55.548 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        >> Listening on 0.0.0.0:4567
+08:12:55.548 [main] INFO  scalikejdbc.config.DBs$              connectionTimeoutMillis is deprecated. Use poolConnectionTimeoutMillis instead.
+08:12:55.550 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
+08:12:55.620 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@ff38471{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+08:12:55.620 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @818ms
+09:21:48.861 [Thread-0] INFO  org.eclipse.jetty.util.log           Logging initialized @751ms
+09:21:48.914 [main] INFO  scalikejdbc.config.DBs$              connectionTimeoutMillis is deprecated. Use poolConnectionTimeoutMillis instead.
+09:21:48.914 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        == Spark has ignited ...
+09:21:48.914 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        >> Listening on 0.0.0.0:4567
+09:21:48.916 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
+09:21:48.972 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@18a26412{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+09:21:48.972 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @865ms
