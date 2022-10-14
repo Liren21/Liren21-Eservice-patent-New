@@ -7,8 +7,31 @@ import pagesStore from "../../../../lib/store/pages-store";
 
 
 export default observer(() => {
+    const dataInfoStatus = [
+        {
+            title: 'Редактирование',
+            icon: 'fa fa-pencil-square-o',
+            status: 0
+        },
+        {
+            title: 'Ожидание проверки',
+            icon: 'fa fa-check-square-o',
+            status: 1
+        },
+        {
+            title: 'Контроль',
+            icon: 'fa fa-eye',
+            status: 2
+        },
+        {
+            title: 'Утверждено',
+            icon: 'fa fa-lock',
+            status: 3
+        },
+    ]
 
 
+    // @ts-ignore
     return (
         <>
             <>
@@ -19,26 +42,25 @@ export default observer(() => {
                         <br/><br/>
                         <Card.Text>
                             <Form>
-                                <Col md={3} style={{display: 'inline-block', paddingRight: '10px'}}>
-                                    <Button value={0} style={{width: '100%'}}
-                                            variant={pagesStore.status == 0 ? "primary" : "outline-primary"}><i
-                                        className="fa fa-pencil-square-o"
-                                        aria-hidden="true"/>Редактирование</Button>
-                                </Col>
-                                <Col md={3} style={{display: 'inline-block', paddingRight: '10px'}}>
-                                    <Button value={1} style={{width: '100%'}}
-                                            variant={pagesStore.status == 1 ? "primary" : "outline-primary"}><i className="fa fa-check-square-o"
-                                                                         aria-hidden="true"/>Ожидание проверки</Button>
-                                </Col>
-                                <Col md={3} style={{display: 'inline-block', paddingRight: '10px'}}>
-                                    <Button value={2} style={{width: '100%'}}
-                                            variant={pagesStore.status == 2 ? "primary" : "outline-primary"}><i className="fa fa-eye" aria-hidden="true"/>Контроль</Button>
-                                </Col>
-                                <Col md={3} style={{display: 'inline-block', paddingRight: '10px'}}>
-                                    <Button value={3} style={{width: '100%'}}
-                                            variant={pagesStore.status == 3 ? "primary" : "outline-primary"}><i className="fa fa-lock" aria-hidden="true"/>Утверждено</Button>
-                                </Col>
+
+                                {
+                                    dataInfoStatus.map((data) => (
+                                        <Col md={3} style={{display: 'inline-block', paddingRight: '10px'}}>
+                                            <Button disabled={data.status} value={0}
+                                                    style={{width: '100%'}}
+                                                    variant={data.status == pagesStore.patentContent['status'] ? "secondary" : "primary"}><i
+                                                className={data.icon}
+                                                aria-hidden="true"/>{data.title}</Button>
+                                        </Col>
+                                    ))
+                                }
                             </Form>
+                            <Card>
+                                <Card.Body>
+                                    <Card.Title>Текущий статус</Card.Title>
+
+                                </Card.Body>
+                            </Card>
                             <Card>
                                 <Card.Body>
                                     <Card.Title> Замечания к заявке</Card.Title>

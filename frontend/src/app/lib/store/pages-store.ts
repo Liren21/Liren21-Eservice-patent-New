@@ -65,6 +65,7 @@ class PagesStore implements IPagesStore {
 
     setStatus(val: number) {
         this.status = val
+        console.log(val)
     }
 
     setDemand(val: Demand[]) {

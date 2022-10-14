@@ -1678,3 +1678,24 @@ java.lang.NumberFormatException: null
 09:21:48.916 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
 09:21:48.972 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@18a26412{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
 09:21:48.972 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @865ms
+10:05:34.767 [Thread-0] INFO  org.eclipse.jetty.util.log           Logging initialized @643ms
+10:05:34.800 [main] INFO  scalikejdbc.config.DBs$              connectionTimeoutMillis is deprecated. Use poolConnectionTimeoutMillis instead.
+10:05:34.801 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        == Spark has ignited ...
+10:05:34.801 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        >> Listening on 0.0.0.0:4567
+10:05:34.803 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
+10:05:34.874 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@37c911a1{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+10:05:34.874 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @753ms
+10:25:19.897 [Thread-0] INFO  org.eclipse.jetty.util.log           Logging initialized @1013ms
+10:25:19.946 [main] INFO  scalikejdbc.config.DBs$              connectionTimeoutMillis is deprecated. Use poolConnectionTimeoutMillis instead.
+10:25:19.971 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        == Spark has ignited ...
+10:25:19.971 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        >> Listening on 0.0.0.0:4567
+10:25:19.975 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
+10:25:20.084 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@15f582ae{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+10:25:20.084 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @1226ms
+09:00:42.849 [Thread-0] INFO  org.eclipse.jetty.util.log           Logging initialized @762ms
+09:00:42.901 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        == Spark has ignited ...
+09:00:42.902 [Thread-0] INFO  s.e.jetty.EmbeddedJettyServer        >> Listening on 0.0.0.0:4567
+09:00:42.910 [Thread-0] INFO  org.eclipse.jetty.server.Server      jetty-9.3.6.v20151106
+09:00:42.919 [main] INFO  scalikejdbc.config.DBs$              connectionTimeoutMillis is deprecated. Use poolConnectionTimeoutMillis instead.
+09:00:43.019 [Thread-0] INFO  o.e.jetty.server.ServerConnector     Started ServerConnector@7bd643a2{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+09:00:43.020 [Thread-0] INFO  org.eclipse.jetty.server.Server      Started @935ms

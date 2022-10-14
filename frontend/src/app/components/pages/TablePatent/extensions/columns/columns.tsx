@@ -10,7 +10,6 @@ export default (): any => {
         const surnameZero = cell[0].surname
         const nameOne = cell[0].name[0]
         const lastnameTree = cell[0].lastname[0]
-
         return surnameZero + " " + nameOne + "." + lastnameTree + ". "
     }
 
@@ -36,6 +35,8 @@ export default (): any => {
                 title = 'Статус "Ожидает проверки"'
                 break
         }
+        pagesStore.setStatus(cell)
+        console.log(cell)
 
         return <i className={icon}/>
     }

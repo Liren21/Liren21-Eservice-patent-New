@@ -42,7 +42,7 @@ npm manifest:
       "kill-back": "kill -9 `lsof -t -i tcp:4567`",
       "kill-front": "kill -9 `lsof -t -i tcp:1234`"
     },
-    "author": "Mr.Sky1001",
+    "author": "Liren21",
     "license": "ISC",
     "lint-staged": {
       "*.{js,jsx}": [
